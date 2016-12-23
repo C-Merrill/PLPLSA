@@ -6,9 +6,9 @@ a {
   color: #00B7FF;
 }
 
-.navbar-nav > li > a {padding-top:5px !important; padding-bottom:5px !important;}
+.navbar-nav > li > a {padding-top:5px !important; padding-bottom:5px !important; color:#FFFFFF !important;}
 .navbar .navbar-brand{ padding: 0px 12px;font-size: 16px;line-height: 28px; margin: 0px; }
-.navbar {min-height:32px !important;}
+.navbar {min-height:28px !important; background-color:#3EA9F5;}
 
 html,body{
   width:100%;
