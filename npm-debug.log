@@ -1,0 +1,1022 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/ubuntu/.nvm/versions/node/v4.6.1/bin/node',
+1 verbose cli   '/home/ubuntu/.nvm/versions/node/v4.6.1/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'phpnode' ]
+2 info using npm@2.15.9
+3 info using node@v4.6.1
+4 verbose install initial load of /home/ubuntu/workspace/package.json
+5 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/body-parser/package.json
+6 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/bootstrap/package.json
+7 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/cookie-parser/package.json
+8 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/debug/package.json
+9 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/ejs/package.json
+10 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/express/package.json
+11 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/font-awesome/package.json
+12 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/jade/package.json
+13 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/jquery/package.json
+14 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/morgan/package.json
+15 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/nodemailer/package.json
+16 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/nodemon/package.json
+17 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/pug/package.json
+18 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/serve-favicon/package.json
+19 info package.json nodemailer@0.7.1 No license field.
+20 verbose readDependencies loading dependencies from /home/ubuntu/workspace/package.json
+21 silly cache add args [ 'phpnode', null ]
+22 verbose cache add spec phpnode
+23 silly cache add parsed spec Result {
+23 silly cache add   raw: 'phpnode',
+23 silly cache add   scope: null,
+23 silly cache add   name: 'phpnode',
+23 silly cache add   rawSpec: '',
+23 silly cache add   spec: 'latest',
+23 silly cache add   type: 'tag' }
+24 silly addNamed phpnode@latest
+25 verbose addNamed "latest" is being treated as a dist-tag for phpnode
+26 info addNameTag [ 'phpnode', 'latest' ]
+27 silly mapToRegistry name phpnode
+28 silly mapToRegistry using default registry
+29 silly mapToRegistry registry https://registry.npmjs.org/
+30 silly mapToRegistry data Result {
+30 silly mapToRegistry   raw: 'phpnode',
+30 silly mapToRegistry   scope: null,
+30 silly mapToRegistry   name: 'phpnode',
+30 silly mapToRegistry   rawSpec: '',
+30 silly mapToRegistry   spec: 'latest',
+30 silly mapToRegistry   type: 'tag' }
+31 silly mapToRegistry uri https://registry.npmjs.org/phpnode
+32 verbose addNameTag registry:https://registry.npmjs.org/phpnode not in flight; fetching
+33 verbose request uri https://registry.npmjs.org/phpnode
+34 verbose request no auth needed
+35 info attempt registry request try #1 at 12:16:22 AM
+36 verbose request id dc6e0928ff485cd2
+37 http request GET https://registry.npmjs.org/phpnode
+38 http 200 https://registry.npmjs.org/phpnode
+39 verbose headers { server: 'nginx/1.10.1',
+39 verbose headers   'content-type': 'application/json',
+39 verbose headers   'last-modified': 'Sat, 02 Apr 2016 19:06:37 GMT',
+39 verbose headers   etag: 'W/"5700183d-42d1"',
+39 verbose headers   'content-encoding': 'gzip',
+39 verbose headers   'cache-control': 'max-age=300',
+39 verbose headers   'content-length': '2141',
+39 verbose headers   'accept-ranges': 'bytes',
+39 verbose headers   date: 'Sat, 24 Dec 2016 00:16:22 GMT',
+39 verbose headers   via: '1.1 varnish',
+39 verbose headers   age: '0',
+39 verbose headers   connection: 'keep-alive',
+39 verbose headers   'x-served-by': 'cache-ord1744-ORD',
+39 verbose headers   'x-cache': 'MISS',
+39 verbose headers   'x-cache-hits': '0',
+39 verbose headers   'x-timer': 'S1482538582.269181,VS0,VE38',
+39 verbose headers   vary: 'Accept-Encoding' }
+40 silly get cb [ 200,
+40 silly get   { server: 'nginx/1.10.1',
+40 silly get     'content-type': 'application/json',
+40 silly get     'last-modified': 'Sat, 02 Apr 2016 19:06:37 GMT',
+40 silly get     etag: 'W/"5700183d-42d1"',
+40 silly get     'content-encoding': 'gzip',
+40 silly get     'cache-control': 'max-age=300',
+40 silly get     'content-length': '2141',
+40 silly get     'accept-ranges': 'bytes',
+40 silly get     date: 'Sat, 24 Dec 2016 00:16:22 GMT',
+40 silly get     via: '1.1 varnish',
+40 silly get     age: '0',
+40 silly get     connection: 'keep-alive',
+40 silly get     'x-served-by': 'cache-ord1744-ORD',
+40 silly get     'x-cache': 'MISS',
+40 silly get     'x-cache-hits': '0',
+40 silly get     'x-timer': 'S1482538582.269181,VS0,VE38',
+40 silly get     vary: 'Accept-Encoding' } ]
+41 verbose get saving phpnode to /home/ubuntu/.npm/registry.npmjs.org/phpnode/.cache.json
+42 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+43 silly addNameTag next cb for phpnode with tag latest
+44 silly addNamed phpnode@1.1.9
+45 verbose addNamed "1.1.9" is a plain semver version for phpnode
+46 silly mapToRegistry name phpnode
+47 silly mapToRegistry using default registry
+48 silly mapToRegistry registry https://registry.npmjs.org/
+49 silly mapToRegistry data Result {
+49 silly mapToRegistry   raw: 'phpnode',
+49 silly mapToRegistry   scope: null,
+49 silly mapToRegistry   name: 'phpnode',
+49 silly mapToRegistry   rawSpec: '',
+49 silly mapToRegistry   spec: 'latest',
+49 silly mapToRegistry   type: 'tag' }
+50 silly mapToRegistry uri https://registry.npmjs.org/phpnode
+51 verbose addRemoteTarball https://registry.npmjs.org/phpnode/-/phpnode-1.1.9.tgz not in flight; adding
+52 verbose addRemoteTarball [ 'https://registry.npmjs.org/phpnode/-/phpnode-1.1.9.tgz',
+52 verbose addRemoteTarball   '73e84412b389ac26bd3072e34f0f2ee942257b29' ]
+53 info retry fetch attempt 1 at 12:16:22 AM
+54 info attempt registry request try #1 at 12:16:22 AM
+55 http fetch GET https://registry.npmjs.org/phpnode/-/phpnode-1.1.9.tgz
+56 http fetch 200 https://registry.npmjs.org/phpnode/-/phpnode-1.1.9.tgz
+57 silly fetchAndShaCheck shasum 73e84412b389ac26bd3072e34f0f2ee942257b29
+58 verbose addTmpTarball /tmp/npm-6483-1085048b/registry.npmjs.org/phpnode/-/phpnode-1.1.9.tgz not in flight; adding
+59 verbose addTmpTarball already have metadata; skipping unpack for phpnode@1.1.9
+60 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+61 silly cache afterAdd phpnode@1.1.9
+62 verbose afterAdd /home/ubuntu/.npm/phpnode/1.1.9/package/package.json not in flight; writing
+63 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+64 verbose afterAdd /home/ubuntu/.npm/phpnode/1.1.9/package/package.json written
+65 silly install resolved [ { name: 'phpnode',
+65 silly install resolved     version: '1.1.9',
+65 silly install resolved     description: 'Run Php with NWjs',
+65 silly install resolved     main: 'phpnode.js',
+65 silly install resolved     scripts:
+65 silly install resolved      { install: 'node scripts/appdir.js',
+65 silly install resolved        postinstall: 'node scripts/php-example.js' },
+65 silly install resolved     keywords: [ 'php' ],
+65 silly install resolved     author: { name: 'Joshua Londono' },
+65 silly install resolved     license: 'MIT',
+65 silly install resolved     dependencies: { portfinder: '^1.0.3' },
+65 silly install resolved     _id: 'phpnode@1.1.9',
+65 silly install resolved     _shasum: '73e84412b389ac26bd3072e34f0f2ee942257b29',
+65 silly install resolved     _from: 'phpnode@latest',
+65 silly install resolved     _npmVersion: '3.6.0',
+65 silly install resolved     _nodeVersion: '5.7.0',
+65 silly install resolved     _npmUser: { name: 'joshualondono', email: 'joshualondono@outlook.com' },
+65 silly install resolved     dist:
+65 silly install resolved      { shasum: '73e84412b389ac26bd3072e34f0f2ee942257b29',
+65 silly install resolved        tarball: 'https://registry.npmjs.org/phpnode/-/phpnode-1.1.9.tgz' },
+65 silly install resolved     maintainers: [ [Object] ],
+65 silly install resolved     _npmOperationalInternal:
+65 silly install resolved      { host: 'packages-12-west.internal.npmjs.com',
+65 silly install resolved        tmp: 'tmp/phpnode-1.1.9.tgz_1459623997299_0.26093605952337384' },
+65 silly install resolved     directories: {},
+65 silly install resolved     _resolved: 'https://registry.npmjs.org/phpnode/-/phpnode-1.1.9.tgz' } ]
+66 info install phpnode@1.1.9 into /home/ubuntu/workspace
+67 info installOne phpnode@1.1.9
+68 verbose installOne of phpnode to /home/ubuntu/workspace not in flight; installing
+69 verbose correctMkdir /home/ubuntu/.npm/_locks correctMkdir not in flight; initializing
+70 verbose lock using /home/ubuntu/.npm/_locks/phpnode-2df7c90a5b3ffd20.lock for /home/ubuntu/workspace/node_modules/phpnode
+71 silly install write writing phpnode 1.1.9 to /home/ubuntu/workspace/node_modules/phpnode
+72 verbose unbuild node_modules/phpnode
+73 silly gentlyRm /home/ubuntu/workspace/node_modules/phpnode is being purged from base /home/ubuntu/workspace
+74 verbose gentlyRm don't care about contents; nuking /home/ubuntu/workspace/node_modules/phpnode
+75 verbose tar unpack /home/ubuntu/.npm/phpnode/1.1.9/package.tgz
+76 verbose tar unpacking to /home/ubuntu/workspace/node_modules/phpnode
+77 silly gentlyRm /home/ubuntu/workspace/node_modules/phpnode is being purged
+78 verbose gentlyRm don't care about contents; nuking /home/ubuntu/workspace/node_modules/phpnode
+79 silly gunzTarPerm modes [ '755', '644' ]
+80 silly gunzTarPerm extractEntry package.json
+81 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+82 silly gunzTarPerm extractEntry phpnode.js
+83 silly gunzTarPerm modified mode [ 'phpnode.js', 438, 420 ]
+84 silly gunzTarPerm extractEntry scripts/appdir.js
+85 silly gunzTarPerm modified mode [ 'scripts/appdir.js', 438, 420 ]
+86 silly gunzTarPerm extractEntry scripts/index.js
+87 silly gunzTarPerm modified mode [ 'scripts/index.js', 438, 420 ]
+88 silly gunzTarPerm extractEntry scripts/json.js
+89 silly gunzTarPerm modified mode [ 'scripts/json.js', 438, 420 ]
+90 silly gunzTarPerm extractEntry scripts/php-example.js
+91 silly gunzTarPerm modified mode [ 'scripts/php-example.js', 438, 420 ]
+92 verbose write writing to /home/ubuntu/workspace/node_modules/phpnode/package.json
+93 info preinstall phpnode@1.1.9
+94 verbose readDependencies loading dependencies from /home/ubuntu/workspace/node_modules/phpnode/package.json
+95 silly prepareForInstallMany adding portfinder@^1.0.3 from phpnode dependencies
+96 verbose readDependencies loading dependencies from /home/ubuntu/workspace/node_modules/phpnode/package.json
+97 silly cache add args [ 'portfinder@^1.0.3', null ]
+98 verbose cache add spec portfinder@^1.0.3
+99 silly cache add parsed spec Result {
+99 silly cache add   raw: 'portfinder@^1.0.3',
+99 silly cache add   scope: null,
+99 silly cache add   name: 'portfinder',
+99 silly cache add   rawSpec: '^1.0.3',
+99 silly cache add   spec: '>=1.0.3 <2.0.0',
+99 silly cache add   type: 'range' }
+100 silly addNamed portfinder@>=1.0.3 <2.0.0
+101 verbose addNamed ">=1.0.3 <2.0.0" is a valid semver range for portfinder
+102 silly addNameRange { name: 'portfinder', range: '>=1.0.3 <2.0.0', hasData: false }
+103 silly mapToRegistry name portfinder
+104 silly mapToRegistry using default registry
+105 silly mapToRegistry registry https://registry.npmjs.org/
+106 silly mapToRegistry data Result {
+106 silly mapToRegistry   raw: 'portfinder',
+106 silly mapToRegistry   scope: null,
+106 silly mapToRegistry   name: 'portfinder',
+106 silly mapToRegistry   rawSpec: '',
+106 silly mapToRegistry   spec: 'latest',
+106 silly mapToRegistry   type: 'tag' }
+107 silly mapToRegistry uri https://registry.npmjs.org/portfinder
+108 verbose addNameRange registry:https://registry.npmjs.org/portfinder not in flight; fetching
+109 verbose request uri https://registry.npmjs.org/portfinder
+110 verbose request no auth needed
+111 info attempt registry request try #1 at 12:16:22 AM
+112 http request GET https://registry.npmjs.org/portfinder
+113 http 200 https://registry.npmjs.org/portfinder
+114 verbose headers { server: 'nginx/1.10.1',
+114 verbose headers   'content-type': 'application/json',
+114 verbose headers   'last-modified': 'Fri, 11 Nov 2016 00:32:02 GMT',
+114 verbose headers   etag: 'W/"58251182-5c54"',
+114 verbose headers   'content-encoding': 'gzip',
+114 verbose headers   'cache-control': 'max-age=300',
+114 verbose headers   'content-length': '3357',
+114 verbose headers   'accept-ranges': 'bytes',
+114 verbose headers   date: 'Sat, 24 Dec 2016 00:16:22 GMT',
+114 verbose headers   via: '1.1 varnish',
+114 verbose headers   age: '85',
+114 verbose headers   connection: 'keep-alive',
+114 verbose headers   'x-served-by': 'cache-ord1744-ORD',
+114 verbose headers   'x-cache': 'HIT',
+114 verbose headers   'x-cache-hits': '1',
+114 verbose headers   'x-timer': 'S1482538582.486434,VS0,VE0',
+114 verbose headers   vary: 'Accept-Encoding' }
+115 silly get cb [ 200,
+115 silly get   { server: 'nginx/1.10.1',
+115 silly get     'content-type': 'application/json',
+115 silly get     'last-modified': 'Fri, 11 Nov 2016 00:32:02 GMT',
+115 silly get     etag: 'W/"58251182-5c54"',
+115 silly get     'content-encoding': 'gzip',
+115 silly get     'cache-control': 'max-age=300',
+115 silly get     'content-length': '3357',
+115 silly get     'accept-ranges': 'bytes',
+115 silly get     date: 'Sat, 24 Dec 2016 00:16:22 GMT',
+115 silly get     via: '1.1 varnish',
+115 silly get     age: '85',
+115 silly get     connection: 'keep-alive',
+115 silly get     'x-served-by': 'cache-ord1744-ORD',
+115 silly get     'x-cache': 'HIT',
+115 silly get     'x-cache-hits': '1',
+115 silly get     'x-timer': 'S1482538582.486434,VS0,VE0',
+115 silly get     vary: 'Accept-Encoding' } ]
+116 verbose get saving portfinder to /home/ubuntu/.npm/registry.npmjs.org/portfinder/.cache.json
+117 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+118 silly addNameRange number 2 { name: 'portfinder', range: '>=1.0.3 <2.0.0', hasData: true }
+119 silly addNameRange versions [ 'portfinder',
+119 silly addNameRange   [ '0.1.0',
+119 silly addNameRange     '0.2.0',
+119 silly addNameRange     '0.2.1',
+119 silly addNameRange     '0.3.0',
+119 silly addNameRange     '0.4.0',
+119 silly addNameRange     '1.0.0',
+119 silly addNameRange     '1.0.1',
+119 silly addNameRange     '1.0.2',
+119 silly addNameRange     '1.0.3',
+119 silly addNameRange     '1.0.4',
+119 silly addNameRange     '1.0.5',
+119 silly addNameRange     '1.0.6',
+119 silly addNameRange     '1.0.7-beta.0',
+119 silly addNameRange     '1.0.7',
+119 silly addNameRange     '1.0.8',
+119 silly addNameRange     '1.0.9',
+119 silly addNameRange     '1.0.10' ] ]
+120 silly addNamed portfinder@1.0.10
+121 verbose addNamed "1.0.10" is a plain semver version for portfinder
+122 silly mapToRegistry name portfinder
+123 silly mapToRegistry using default registry
+124 silly mapToRegistry registry https://registry.npmjs.org/
+125 silly mapToRegistry data Result {
+125 silly mapToRegistry   raw: 'portfinder',
+125 silly mapToRegistry   scope: null,
+125 silly mapToRegistry   name: 'portfinder',
+125 silly mapToRegistry   rawSpec: '',
+125 silly mapToRegistry   spec: 'latest',
+125 silly mapToRegistry   type: 'tag' }
+126 silly mapToRegistry uri https://registry.npmjs.org/portfinder
+127 verbose addRemoteTarball https://registry.npmjs.org/portfinder/-/portfinder-1.0.10.tgz not in flight; adding
+128 verbose addRemoteTarball [ 'https://registry.npmjs.org/portfinder/-/portfinder-1.0.10.tgz',
+128 verbose addRemoteTarball   '7a4de9d98553c315da6f1e1ed05138eeb2d16bb8' ]
+129 info retry fetch attempt 1 at 12:16:22 AM
+130 info attempt registry request try #1 at 12:16:22 AM
+131 http fetch GET https://registry.npmjs.org/portfinder/-/portfinder-1.0.10.tgz
+132 http fetch 200 https://registry.npmjs.org/portfinder/-/portfinder-1.0.10.tgz
+133 silly fetchAndShaCheck shasum 7a4de9d98553c315da6f1e1ed05138eeb2d16bb8
+134 verbose addTmpTarball /tmp/npm-6483-1085048b/registry.npmjs.org/portfinder/-/portfinder-1.0.10.tgz not in flight; adding
+135 verbose addTmpTarball already have metadata; skipping unpack for portfinder@1.0.10
+136 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+137 silly cache afterAdd portfinder@1.0.10
+138 verbose afterAdd /home/ubuntu/.npm/portfinder/1.0.10/package/package.json not in flight; writing
+139 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+140 verbose afterAdd /home/ubuntu/.npm/portfinder/1.0.10/package/package.json written
+141 silly install resolved [ { name: 'portfinder',
+141 silly install resolved     description: 'A simple tool to find an open port on the current machine',
+141 silly install resolved     version: '1.0.10',
+141 silly install resolved     author: { name: 'Charlie Robbins', email: 'charlie.robbins@gmail.com' },
+141 silly install resolved     repository:
+141 silly install resolved      { type: 'git',
+141 silly install resolved        url: 'git+ssh://git@github.com/indexzero/node-portfinder.git' },
+141 silly install resolved     keywords: [ 'http', 'ports', 'utilities' ],
+141 silly install resolved     files: [ 'lib' ],
+141 silly install resolved     dependencies: { async: '^1.5.2', debug: '^2.2.0', mkdirp: '0.5.x' },
+141 silly install resolved     devDependencies: { glob: '^6.0.4', vows: '0.8.0' },
+141 silly install resolved     main: './lib/portfinder',
+141 silly install resolved     scripts: { test: 'vows test/*-test.js --spec' },
+141 silly install resolved     engines: { node: '>= 0.12.0' },
+141 silly install resolved     license: 'MIT',
+141 silly install resolved     gitHead: 'c5dd2cc76bd26d4771cee9e0637dfa27a7f89f24',
+141 silly install resolved     bugs: { url: 'https://github.com/indexzero/node-portfinder/issues' },
+141 silly install resolved     homepage: 'https://github.com/indexzero/node-portfinder#readme',
+141 silly install resolved     _id: 'portfinder@1.0.10',
+141 silly install resolved     _shasum: '7a4de9d98553c315da6f1e1ed05138eeb2d16bb8',
+141 silly install resolved     _from: 'portfinder@>=1.0.3 <2.0.0',
+141 silly install resolved     _npmVersion: '3.10.9',
+141 silly install resolved     _nodeVersion: '7.0.0',
+141 silly install resolved     _npmUser: { name: 'eriktrom', email: 'erik.trom.github@gmail.com' },
+141 silly install resolved     dist:
+141 silly install resolved      { shasum: '7a4de9d98553c315da6f1e1ed05138eeb2d16bb8',
+141 silly install resolved        tarball: 'https://registry.npmjs.org/portfinder/-/portfinder-1.0.10.tgz' },
+141 silly install resolved     maintainers: [ [Object], [Object] ],
+141 silly install resolved     _npmOperationalInternal:
+141 silly install resolved      { host: 'packages-18-east.internal.npmjs.com',
+141 silly install resolved        tmp: 'tmp/portfinder-1.0.10.tgz_1478824320733_0.8213196084834635' },
+141 silly install resolved     directories: {},
+141 silly install resolved     _resolved: 'https://registry.npmjs.org/portfinder/-/portfinder-1.0.10.tgz' } ]
+142 info install portfinder@1.0.10 into /home/ubuntu/workspace/node_modules/phpnode
+143 info installOne portfinder@1.0.10
+144 verbose installOne of portfinder to /home/ubuntu/workspace/node_modules/phpnode not in flight; installing
+145 verbose correctMkdir /home/ubuntu/.npm/_locks correctMkdir not in flight; initializing
+146 verbose lock using /home/ubuntu/.npm/_locks/portfinder-f3ca6b009d76aa09.lock for /home/ubuntu/workspace/node_modules/phpnode/node_modules/portfinder
+147 silly install write writing portfinder 1.0.10 to /home/ubuntu/workspace/node_modules/phpnode/node_modules/portfinder
+148 verbose unbuild node_modules/phpnode/node_modules/portfinder
+149 silly gentlyRm /home/ubuntu/workspace/node_modules/phpnode/node_modules/portfinder is being purged from base /home/ubuntu/workspace
+150 verbose gentlyRm don't care about contents; nuking /home/ubuntu/workspace/node_modules/phpnode/node_modules/portfinder
+151 verbose tar unpack /home/ubuntu/.npm/portfinder/1.0.10/package.tgz
+152 verbose tar unpacking to /home/ubuntu/workspace/node_modules/phpnode/node_modules/portfinder
+153 silly gentlyRm /home/ubuntu/workspace/node_modules/phpnode/node_modules/portfinder is being purged
+154 verbose gentlyRm don't care about contents; nuking /home/ubuntu/workspace/node_modules/phpnode/node_modules/portfinder
+155 silly gunzTarPerm modes [ '755', '644' ]
+156 silly gunzTarPerm extractEntry package.json
+157 silly gunzTarPerm extractEntry README.md
+158 silly gunzTarPerm extractEntry LICENSE
+159 silly gunzTarPerm extractEntry lib/portfinder.js
+160 verbose write writing to /home/ubuntu/workspace/node_modules/phpnode/node_modules/portfinder/package.json
+161 info preinstall portfinder@1.0.10
+162 verbose readDependencies loading dependencies from /home/ubuntu/workspace/node_modules/phpnode/node_modules/portfinder/package.json
+163 silly prepareForInstallMany adding async@^1.5.2 from portfinder dependencies
+164 silly prepareForInstallMany adding mkdirp@0.5.x from portfinder dependencies
+165 verbose readDependencies loading dependencies from /home/ubuntu/workspace/node_modules/phpnode/node_modules/portfinder/package.json
+166 silly cache add args [ 'async@^1.5.2', null ]
+167 verbose cache add spec async@^1.5.2
+168 silly cache add args [ 'mkdirp@0.5.x', null ]
+169 verbose cache add spec mkdirp@0.5.x
+170 silly cache add parsed spec Result {
+170 silly cache add   raw: 'async@^1.5.2',
+170 silly cache add   scope: null,
+170 silly cache add   name: 'async',
+170 silly cache add   rawSpec: '^1.5.2',
+170 silly cache add   spec: '>=1.5.2 <2.0.0',
+170 silly cache add   type: 'range' }
+171 silly addNamed async@>=1.5.2 <2.0.0
+172 verbose addNamed ">=1.5.2 <2.0.0" is a valid semver range for async
+173 silly addNameRange { name: 'async', range: '>=1.5.2 <2.0.0', hasData: false }
+174 silly mapToRegistry name async
+175 silly mapToRegistry using default registry
+176 silly mapToRegistry registry https://registry.npmjs.org/
+177 silly mapToRegistry data Result {
+177 silly mapToRegistry   raw: 'async',
+177 silly mapToRegistry   scope: null,
+177 silly mapToRegistry   name: 'async',
+177 silly mapToRegistry   rawSpec: '',
+177 silly mapToRegistry   spec: 'latest',
+177 silly mapToRegistry   type: 'tag' }
+178 silly mapToRegistry uri https://registry.npmjs.org/async
+179 verbose addNameRange registry:https://registry.npmjs.org/async not in flight; fetching
+180 silly cache add parsed spec Result {
+180 silly cache add   raw: 'mkdirp@0.5.x',
+180 silly cache add   scope: null,
+180 silly cache add   name: 'mkdirp',
+180 silly cache add   rawSpec: '0.5.x',
+180 silly cache add   spec: '>=0.5.0 <0.6.0',
+180 silly cache add   type: 'range' }
+181 silly addNamed mkdirp@>=0.5.0 <0.6.0
+182 verbose addNamed ">=0.5.0 <0.6.0" is a valid semver range for mkdirp
+183 silly addNameRange { name: 'mkdirp', range: '>=0.5.0 <0.6.0', hasData: false }
+184 silly mapToRegistry name mkdirp
+185 silly mapToRegistry using default registry
+186 silly mapToRegistry registry https://registry.npmjs.org/
+187 silly mapToRegistry data Result {
+187 silly mapToRegistry   raw: 'mkdirp',
+187 silly mapToRegistry   scope: null,
+187 silly mapToRegistry   name: 'mkdirp',
+187 silly mapToRegistry   rawSpec: '',
+187 silly mapToRegistry   spec: 'latest',
+187 silly mapToRegistry   type: 'tag' }
+188 silly mapToRegistry uri https://registry.npmjs.org/mkdirp
+189 verbose addNameRange registry:https://registry.npmjs.org/mkdirp not in flight; fetching
+190 verbose request uri https://registry.npmjs.org/mkdirp
+191 verbose request no auth needed
+192 info attempt registry request try #1 at 12:16:22 AM
+193 verbose etag W/"5850cf08-60bb"
+194 verbose lastModified Wed, 14 Dec 2016 04:48:08 GMT
+195 http request GET https://registry.npmjs.org/mkdirp
+196 verbose request uri https://registry.npmjs.org/async
+197 verbose request no auth needed
+198 info attempt registry request try #1 at 12:16:22 AM
+199 verbose etag W/"58588451-1d294"
+200 verbose lastModified Tue, 20 Dec 2016 01:07:29 GMT
+201 http request GET https://registry.npmjs.org/async
+202 http 304 https://registry.npmjs.org/mkdirp
+203 verbose headers { date: 'Sat, 24 Dec 2016 00:16:22 GMT',
+203 verbose headers   via: '1.1 varnish',
+203 verbose headers   'cache-control': 'max-age=300',
+203 verbose headers   etag: 'W/"5850cf08-60bb"',
+203 verbose headers   age: '83',
+203 verbose headers   connection: 'keep-alive',
+203 verbose headers   'x-served-by': 'cache-ord1744-ORD',
+203 verbose headers   'x-cache': 'HIT',
+203 verbose headers   'x-cache-hits': '4',
+203 verbose headers   'x-timer': 'S1482538582.596811,VS0,VE0',
+203 verbose headers   vary: 'Accept-Encoding' }
+204 silly get cb [ 304,
+204 silly get   { date: 'Sat, 24 Dec 2016 00:16:22 GMT',
+204 silly get     via: '1.1 varnish',
+204 silly get     'cache-control': 'max-age=300',
+204 silly get     etag: 'W/"5850cf08-60bb"',
+204 silly get     age: '83',
+204 silly get     connection: 'keep-alive',
+204 silly get     'x-served-by': 'cache-ord1744-ORD',
+204 silly get     'x-cache': 'HIT',
+204 silly get     'x-cache-hits': '4',
+204 silly get     'x-timer': 'S1482538582.596811,VS0,VE0',
+204 silly get     vary: 'Accept-Encoding' } ]
+205 verbose etag https://registry.npmjs.org/mkdirp from cache
+206 verbose get saving mkdirp to /home/ubuntu/.npm/registry.npmjs.org/mkdirp/.cache.json
+207 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+208 silly addNameRange number 2 { name: 'mkdirp', range: '>=0.5.0 <0.6.0', hasData: true }
+209 silly addNameRange versions [ 'mkdirp',
+209 silly addNameRange   [ '0.0.1',
+209 silly addNameRange     '0.0.2',
+209 silly addNameRange     '0.0.3',
+209 silly addNameRange     '0.0.4',
+209 silly addNameRange     '0.0.5',
+209 silly addNameRange     '0.0.6',
+209 silly addNameRange     '0.0.7',
+209 silly addNameRange     '0.1.0',
+209 silly addNameRange     '0.2.0',
+209 silly addNameRange     '0.2.1',
+209 silly addNameRange     '0.2.2',
+209 silly addNameRange     '0.3.0',
+209 silly addNameRange     '0.3.1',
+209 silly addNameRange     '0.3.2',
+209 silly addNameRange     '0.3.3',
+209 silly addNameRange     '0.3.4',
+209 silly addNameRange     '0.3.5',
+209 silly addNameRange     '0.4.0',
+209 silly addNameRange     '0.4.1',
+209 silly addNameRange     '0.4.2',
+209 silly addNameRange     '0.5.0',
+209 silly addNameRange     '0.5.1' ] ]
+210 silly addNamed mkdirp@0.5.1
+211 verbose addNamed "0.5.1" is a plain semver version for mkdirp
+212 silly cache afterAdd mkdirp@0.5.1
+213 verbose afterAdd /home/ubuntu/.npm/mkdirp/0.5.1/package/package.json not in flight; writing
+214 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+215 verbose afterAdd /home/ubuntu/.npm/mkdirp/0.5.1/package/package.json written
+216 http 200 https://registry.npmjs.org/async
+217 verbose headers { server: 'nginx/1.10.1',
+217 verbose headers   'content-type': 'application/json',
+217 verbose headers   'last-modified': 'Thu, 22 Dec 2016 03:20:38 GMT',
+217 verbose headers   etag: 'W/"585b4686-1d2a2"',
+217 verbose headers   'content-encoding': 'gzip',
+217 verbose headers   'cache-control': 'max-age=300',
+217 verbose headers   'content-length': '15125',
+217 verbose headers   'accept-ranges': 'bytes',
+217 verbose headers   date: 'Sat, 24 Dec 2016 00:16:22 GMT',
+217 verbose headers   via: '1.1 varnish',
+217 verbose headers   age: '118',
+217 verbose headers   connection: 'keep-alive',
+217 verbose headers   'x-served-by': 'cache-ord1746-ORD',
+217 verbose headers   'x-cache': 'HIT',
+217 verbose headers   'x-cache-hits': '6',
+217 verbose headers   'x-timer': 'S1482538582.627794,VS0,VE0',
+217 verbose headers   vary: 'Accept-Encoding' }
+218 silly get cb [ 200,
+218 silly get   { server: 'nginx/1.10.1',
+218 silly get     'content-type': 'application/json',
+218 silly get     'last-modified': 'Thu, 22 Dec 2016 03:20:38 GMT',
+218 silly get     etag: 'W/"585b4686-1d2a2"',
+218 silly get     'content-encoding': 'gzip',
+218 silly get     'cache-control': 'max-age=300',
+218 silly get     'content-length': '15125',
+218 silly get     'accept-ranges': 'bytes',
+218 silly get     date: 'Sat, 24 Dec 2016 00:16:22 GMT',
+218 silly get     via: '1.1 varnish',
+218 silly get     age: '118',
+218 silly get     connection: 'keep-alive',
+218 silly get     'x-served-by': 'cache-ord1746-ORD',
+218 silly get     'x-cache': 'HIT',
+218 silly get     'x-cache-hits': '6',
+218 silly get     'x-timer': 'S1482538582.627794,VS0,VE0',
+218 silly get     vary: 'Accept-Encoding' } ]
+219 verbose get saving async to /home/ubuntu/.npm/registry.npmjs.org/async/.cache.json
+220 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+221 silly addNameRange number 2 { name: 'async', range: '>=1.5.2 <2.0.0', hasData: true }
+222 silly addNameRange versions [ 'async',
+222 silly addNameRange   [ '0.1.0',
+222 silly addNameRange     '0.1.1',
+222 silly addNameRange     '0.1.2',
+222 silly addNameRange     '0.1.3',
+222 silly addNameRange     '0.1.4',
+222 silly addNameRange     '0.1.5',
+222 silly addNameRange     '0.1.6',
+222 silly addNameRange     '0.1.7',
+222 silly addNameRange     '0.1.8',
+222 silly addNameRange     '0.1.9',
+222 silly addNameRange     '0.1.10',
+222 silly addNameRange     '0.1.11',
+222 silly addNameRange     '0.1.12',
+222 silly addNameRange     '0.1.13',
+222 silly addNameRange     '0.1.14',
+222 silly addNameRange     '0.1.15',
+222 silly addNameRange     '0.1.16',
+222 silly addNameRange     '0.1.17',
+222 silly addNameRange     '0.1.18',
+222 silly addNameRange     '0.1.19',
+222 silly addNameRange     '0.1.20',
+222 silly addNameRange     '0.1.21',
+222 silly addNameRange     '0.1.22',
+222 silly addNameRange     '0.2.0',
+222 silly addNameRange     '0.2.1',
+222 silly addNameRange     '0.2.2',
+222 silly addNameRange     '0.2.3',
+222 silly addNameRange     '0.2.4',
+222 silly addNameRange     '0.2.5',
+222 silly addNameRange     '0.2.6',
+222 silly addNameRange     '0.2.7',
+222 silly addNameRange     '0.2.8',
+222 silly addNameRange     '0.2.9',
+222 silly addNameRange     '0.2.10',
+222 silly addNameRange     '0.3.0',
+222 silly addNameRange     '0.4.0',
+222 silly addNameRange     '0.4.1',
+222 silly addNameRange     '0.5.0',
+222 silly addNameRange     '0.6.0',
+222 silly addNameRange     '0.6.1',
+222 silly addNameRange     '0.6.2',
+222 silly addNameRange     '0.7.0',
+222 silly addNameRange     '0.8.0',
+222 silly addNameRange     '0.9.0',
+222 silly addNameRange     '0.9.2',
+222 silly addNameRange     '1.0.0',
+222 silly addNameRange     '1.1.0',
+222 silly addNameRange     '1.2.0',
+222 silly addNameRange     '1.1.1',
+222 silly addNameRange     '1.2.1',
+222 silly addNameRange     '1.3.0',
+222 silly addNameRange     '1.4.0',
+222 silly addNameRange     '1.4.1',
+222 silly addNameRange     '1.4.2',
+222 silly addNameRange     '1.5.0',
+222 silly addNameRange     '1.5.1',
+222 silly addNameRange     '1.5.2',
+222 silly addNameRange     '2.0.0-alpha.0',
+222 silly addNameRange     '2.0.0-rc.1',
+222 silly addNameRange     '2.0.0-rc.2',
+222 silly addNameRange     '2.0.0-rc.3',
+222 silly addNameRange     '2.0.0-rc.4',
+222 silly addNameRange     '2.0.0-rc.5',
+222 silly addNameRange     '2.0.0-rc.6',
+222 silly addNameRange     '2.0.0',
+222 silly addNameRange     '2.0.1',
+222 silly addNameRange     '2.1.0',
+222 silly addNameRange     '2.1.1',
+222 silly addNameRange     '2.1.2',
+222 silly addNameRange     '2.1.4' ] ]
+223 silly addNamed async@1.5.2
+224 verbose addNamed "1.5.2" is a plain semver version for async
+225 silly mapToRegistry name async
+226 silly mapToRegistry using default registry
+227 silly mapToRegistry registry https://registry.npmjs.org/
+228 silly mapToRegistry data Result {
+228 silly mapToRegistry   raw: 'async',
+228 silly mapToRegistry   scope: null,
+228 silly mapToRegistry   name: 'async',
+228 silly mapToRegistry   rawSpec: '',
+228 silly mapToRegistry   spec: 'latest',
+228 silly mapToRegistry   type: 'tag' }
+229 silly mapToRegistry uri https://registry.npmjs.org/async
+230 verbose addRemoteTarball https://registry.npmjs.org/async/-/async-1.5.2.tgz not in flight; adding
+231 verbose addRemoteTarball [ 'https://registry.npmjs.org/async/-/async-1.5.2.tgz',
+231 verbose addRemoteTarball   'ec6a61ae56480c0c3cb241c95618e20892f9672a' ]
+232 info retry fetch attempt 1 at 12:16:22 AM
+233 info attempt registry request try #1 at 12:16:22 AM
+234 http fetch GET https://registry.npmjs.org/async/-/async-1.5.2.tgz
+235 http fetch 200 https://registry.npmjs.org/async/-/async-1.5.2.tgz
+236 silly fetchAndShaCheck shasum ec6a61ae56480c0c3cb241c95618e20892f9672a
+237 verbose addTmpTarball /tmp/npm-6483-1085048b/registry.npmjs.org/async/-/async-1.5.2.tgz not in flight; adding
+238 verbose addTmpTarball already have metadata; skipping unpack for async@1.5.2
+239 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+240 silly cache afterAdd async@1.5.2
+241 verbose afterAdd /home/ubuntu/.npm/async/1.5.2/package/package.json not in flight; writing
+242 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+243 verbose afterAdd /home/ubuntu/.npm/async/1.5.2/package/package.json written
+244 silly install resolved [ { name: 'mkdirp',
+244 silly install resolved     description: 'Recursively mkdir, like `mkdir -p`',
+244 silly install resolved     version: '0.5.1',
+244 silly install resolved     author:
+244 silly install resolved      { name: 'James Halliday',
+244 silly install resolved        email: 'mail@substack.net',
+244 silly install resolved        url: 'http://substack.net' },
+244 silly install resolved     main: 'index.js',
+244 silly install resolved     keywords: [ 'mkdir', 'directory' ],
+244 silly install resolved     repository:
+244 silly install resolved      { type: 'git',
+244 silly install resolved        url: 'git+https://github.com/substack/node-mkdirp.git' },
+244 silly install resolved     scripts: { test: 'tap test/*.js' },
+244 silly install resolved     dependencies: { minimist: '0.0.8' },
+244 silly install resolved     devDependencies: { tap: '1', 'mock-fs': '2 >=2.7.0' },
+244 silly install resolved     bin: { mkdirp: 'bin/cmd.js' },
+244 silly install resolved     license: 'MIT',
+244 silly install resolved     gitHead: 'd4eff0f06093aed4f387e88e9fc301cb76beedc7',
+244 silly install resolved     bugs: { url: 'https://github.com/substack/node-mkdirp/issues' },
+244 silly install resolved     homepage: 'https://github.com/substack/node-mkdirp#readme',
+244 silly install resolved     _id: 'mkdirp@0.5.1',
+244 silly install resolved     _shasum: '30057438eac6cf7f8c4767f38648d6697d75c903',
+244 silly install resolved     _from: 'mkdirp@>=0.5.0 <0.6.0',
+244 silly install resolved     _npmVersion: '2.9.0',
+244 silly install resolved     _nodeVersion: '2.0.0',
+244 silly install resolved     _npmUser: { name: 'substack', email: 'substack@gmail.com' },
+244 silly install resolved     dist:
+244 silly install resolved      { shasum: '30057438eac6cf7f8c4767f38648d6697d75c903',
+244 silly install resolved        tarball: 'https://registry.npmjs.org/mkdirp/-/mkdirp-0.5.1.tgz' },
+244 silly install resolved     maintainers: [ [Object] ],
+244 silly install resolved     directories: {},
+244 silly install resolved     _resolved: 'https://registry.npmjs.org/mkdirp/-/mkdirp-0.5.1.tgz',
+244 silly install resolved     readme: 'ERROR: No README data found!' },
+244 silly install resolved   { name: 'async',
+244 silly install resolved     description: 'Higher-order functions and common patterns for asynchronous code',
+244 silly install resolved     main: 'lib/async.js',
+244 silly install resolved     files: [ 'lib', 'dist/async.js', 'dist/async.min.js' ],
+244 silly install resolved     author: { name: 'Caolan McMahon' },
+244 silly install resolved     version: '1.5.2',
+244 silly install resolved     keywords: [ 'async', 'callback', 'utility', 'module' ],
+244 silly install resolved     repository: { type: 'git', url: 'git+https://github.com/caolan/async.git' },
+244 silly install resolved     bugs: { url: 'https://github.com/caolan/async/issues' },
+244 silly install resolved     license: 'MIT',
+244 silly install resolved     devDependencies:
+244 silly install resolved      { benchmark: 'github:bestiejs/benchmark.js',
+244 silly install resolved        bluebird: '^2.9.32',
+244 silly install resolved        chai: '^3.1.0',
+244 silly install resolved        coveralls: '^2.11.2',
+244 silly install resolved        'es6-promise': '^2.3.0',
+244 silly install resolved        jscs: '^1.13.1',
+244 silly install resolved        jshint: '~2.8.0',
+244 silly install resolved        karma: '^0.13.2',
+244 silly install resolved        'karma-browserify': '^4.2.1',
+244 silly install resolved        'karma-firefox-launcher': '^0.1.6',
+244 silly install resolved        'karma-mocha': '^0.2.0',
+244 silly install resolved        'karma-mocha-reporter': '^1.0.2',
+244 silly install resolved        lodash: '^3.9.0',
+244 silly install resolved        mkdirp: '~0.5.1',
+244 silly install resolved        mocha: '^2.2.5',
+244 silly install resolved        'native-promise-only': '^0.8.0-a',
+244 silly install resolved        nodeunit: '>0.0.0',
+244 silly install resolved        nyc: '^2.1.0',
+244 silly install resolved        rsvp: '^3.0.18',
+244 silly install resolved        semver: '^4.3.6',
+244 silly install resolved        'uglify-js': '~2.4.0',
+244 silly install resolved        xyz: '^0.5.0',
+244 silly install resolved        yargs: '~3.9.1' },
+244 silly install resolved     jam: { main: 'lib/async.js', include: [Object], categories: [Object] },
+244 silly install resolved     scripts:
+244 silly install resolved      { 'mocha-node-test': 'mocha mocha_test/',
+244 silly install resolved        'mocha-browser-test': 'karma start',
+244 silly install resolved        'mocha-test': 'npm run mocha-node-test && npm run mocha-browser-test',
+244 silly install resolved        'nodeunit-test': 'nodeunit test/test-async.js',
+244 silly install resolved        test: 'npm run-script lint && npm run nodeunit-test && npm run mocha-test',
+244 silly install resolved        lint: 'jshint lib/*.js test/*.js perf/*.js && jscs lib/*.js test/*.js perf/*.js',
+244 silly install resolved        coverage: 'nyc npm test && nyc report',
+244 silly install resolved        coveralls: 'nyc npm test && nyc report --reporter=text-lcov | coveralls' },
+244 silly install resolved     spm: { main: 'lib/async.js' },
+244 silly install resolved     volo: { main: 'lib/async.js', ignore: [Object] },
+244 silly install resolved     gitHead: '9ab5c67b7cb3a4c3dad4a2d4552a2f6775545d6c',
+244 silly install resolved     homepage: 'https://github.com/caolan/async#readme',
+244 silly install resolved     _id: 'async@1.5.2',
+244 silly install resolved     _shasum: 'ec6a61ae56480c0c3cb241c95618e20892f9672a',
+244 silly install resolved     _from: 'async@>=1.5.2 <2.0.0',
+244 silly install resolved     _npmVersion: '3.5.2',
+244 silly install resolved     _nodeVersion: '4.2.3',
+244 silly install resolved     _npmUser: { name: 'aearly', email: 'alexander.early@gmail.com' },
+244 silly install resolved     maintainers: [ [Object], [Object], [Object], [Object] ],
+244 silly install resolved     dist:
+244 silly install resolved      { shasum: 'ec6a61ae56480c0c3cb241c95618e20892f9672a',
+244 silly install resolved        tarball: 'https://registry.npmjs.org/async/-/async-1.5.2.tgz' },
+244 silly install resolved     directories: {},
+244 silly install resolved     _resolved: 'https://registry.npmjs.org/async/-/async-1.5.2.tgz' } ]
+245 info install mkdirp@0.5.1 into /home/ubuntu/workspace/node_modules/phpnode/node_modules/portfinder
+246 info install async@1.5.2 into /home/ubuntu/workspace/node_modules/phpnode/node_modules/portfinder
+247 info installOne mkdirp@0.5.1
+248 verbose installOne of mkdirp to /home/ubuntu/workspace/node_modules/phpnode/node_modules/portfinder not in flight; installing
+249 verbose correctMkdir /home/ubuntu/.npm/_locks correctMkdir not in flight; initializing
+250 info installOne async@1.5.2
+251 verbose installOne of async to /home/ubuntu/workspace/node_modules/phpnode/node_modules/portfinder not in flight; installing
+252 verbose correctMkdir /home/ubuntu/.npm/_locks correctMkdir not in flight; initializing
+253 verbose lock using /home/ubuntu/.npm/_locks/mkdirp-5fb2ccecb3864431.lock for /home/ubuntu/workspace/node_modules/phpnode/node_modules/portfinder/node_modules/mkdirp
+254 verbose lock using /home/ubuntu/.npm/_locks/async-56d82b2c0ef9f25b.lock for /home/ubuntu/workspace/node_modules/phpnode/node_modules/portfinder/node_modules/async
+255 silly install write writing mkdirp 0.5.1 to /home/ubuntu/workspace/node_modules/phpnode/node_modules/portfinder/node_modules/mkdirp
+256 silly install write writing async 1.5.2 to /home/ubuntu/workspace/node_modules/phpnode/node_modules/portfinder/node_modules/async
+257 verbose unbuild node_modules/phpnode/node_modules/portfinder/node_modules/async
+258 verbose unbuild node_modules/phpnode/node_modules/portfinder/node_modules/mkdirp
+259 silly gentlyRm /home/ubuntu/workspace/node_modules/phpnode/node_modules/portfinder/node_modules/async is being purged from base /home/ubuntu/workspace
+260 verbose gentlyRm don't care about contents; nuking /home/ubuntu/workspace/node_modules/phpnode/node_modules/portfinder/node_modules/async
+261 silly gentlyRm /home/ubuntu/workspace/node_modules/phpnode/node_modules/portfinder/node_modules/mkdirp is being purged from base /home/ubuntu/workspace
+262 verbose gentlyRm don't care about contents; nuking /home/ubuntu/workspace/node_modules/phpnode/node_modules/portfinder/node_modules/mkdirp
+263 verbose tar unpack /home/ubuntu/.npm/async/1.5.2/package.tgz
+264 verbose tar unpacking to /home/ubuntu/workspace/node_modules/phpnode/node_modules/portfinder/node_modules/async
+265 silly gentlyRm /home/ubuntu/workspace/node_modules/phpnode/node_modules/portfinder/node_modules/async is being purged
+266 verbose gentlyRm don't care about contents; nuking /home/ubuntu/workspace/node_modules/phpnode/node_modules/portfinder/node_modules/async
+267 verbose tar unpack /home/ubuntu/.npm/mkdirp/0.5.1/package.tgz
+268 verbose tar unpacking to /home/ubuntu/workspace/node_modules/phpnode/node_modules/portfinder/node_modules/mkdirp
+269 silly gentlyRm /home/ubuntu/workspace/node_modules/phpnode/node_modules/portfinder/node_modules/mkdirp is being purged
+270 verbose gentlyRm don't care about contents; nuking /home/ubuntu/workspace/node_modules/phpnode/node_modules/portfinder/node_modules/mkdirp
+271 silly gunzTarPerm modes [ '755', '644' ]
+272 silly gunzTarPerm modes [ '755', '644' ]
+273 silly gunzTarPerm extractEntry package.json
+274 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+275 silly gunzTarPerm extractEntry README.md
+276 silly gunzTarPerm modified mode [ 'README.md', 436, 420 ]
+277 silly gunzTarPerm extractEntry package.json
+278 silly gunzTarPerm extractEntry LICENSE
+279 silly gunzTarPerm modified mode [ 'LICENSE', 436, 420 ]
+280 silly gunzTarPerm extractEntry LICENSE
+281 silly gunzTarPerm extractEntry index.js
+282 silly gunzTarPerm extractEntry CHANGELOG.md
+283 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 436, 420 ]
+284 silly gunzTarPerm extractEntry dist/async.js
+285 silly gunzTarPerm modified mode [ 'dist/async.js', 436, 420 ]
+286 silly gunzTarPerm extractEntry dist/async.min.js
+287 silly gunzTarPerm modified mode [ 'dist/async.min.js', 436, 420 ]
+288 silly gunzTarPerm extractEntry lib/async.js
+289 silly gunzTarPerm modified mode [ 'lib/async.js', 436, 420 ]
+290 silly gunzTarPerm extractEntry .travis.yml
+291 silly gunzTarPerm extractEntry bin/cmd.js
+292 silly gunzTarPerm extractEntry bin/usage.txt
+293 silly gunzTarPerm extractEntry examples/pow.js
+294 silly gunzTarPerm extractEntry readme.markdown
+295 silly gunzTarPerm extractEntry test/chmod.js
+296 silly gunzTarPerm extractEntry test/opts_fs_sync.js
+297 silly gunzTarPerm extractEntry test/perm.js
+298 silly gunzTarPerm extractEntry test/perm_sync.js
+299 silly gunzTarPerm extractEntry test/opts_fs.js
+300 silly gunzTarPerm extractEntry test/rel.js
+301 silly gunzTarPerm extractEntry test/return.js
+302 silly gunzTarPerm extractEntry test/return_sync.js
+303 silly gunzTarPerm extractEntry test/root.js
+304 silly gunzTarPerm extractEntry test/sync.js
+305 silly gunzTarPerm extractEntry test/mkdirp.js
+306 silly gunzTarPerm extractEntry test/umask.js
+307 verbose write writing to /home/ubuntu/workspace/node_modules/phpnode/node_modules/portfinder/node_modules/async/package.json
+308 info preinstall async@1.5.2
+309 verbose readDependencies loading dependencies from /home/ubuntu/workspace/node_modules/phpnode/node_modules/portfinder/node_modules/async/package.json
+310 silly gunzTarPerm extractEntry test/clobber.js
+311 silly gunzTarPerm extractEntry test/umask_sync.js
+312 verbose readDependencies loading dependencies from /home/ubuntu/workspace/node_modules/phpnode/node_modules/portfinder/node_modules/async/package.json
+313 silly gunzTarPerm extractEntry test/race.js
+314 silly install resolved []
+315 verbose about to build /home/ubuntu/workspace/node_modules/phpnode/node_modules/portfinder/node_modules/async
+316 info build /home/ubuntu/workspace/node_modules/phpnode/node_modules/portfinder/node_modules/async
+317 info linkStuff async@1.5.2
+318 silly linkStuff async@1.5.2 has /home/ubuntu/workspace/node_modules/phpnode/node_modules/portfinder/node_modules as its parent node_modules
+319 verbose linkBins async@1.5.2
+320 verbose linkMans async@1.5.2
+321 verbose rebuildBundles async@1.5.2
+322 info install async@1.5.2
+323 info postinstall async@1.5.2
+324 verbose unlock done using /home/ubuntu/.npm/_locks/async-56d82b2c0ef9f25b.lock for /home/ubuntu/workspace/node_modules/phpnode/node_modules/portfinder/node_modules/async
+325 verbose write writing to /home/ubuntu/workspace/node_modules/phpnode/node_modules/portfinder/node_modules/mkdirp/package.json
+326 info preinstall mkdirp@0.5.1
+327 verbose readDependencies loading dependencies from /home/ubuntu/workspace/node_modules/phpnode/node_modules/portfinder/node_modules/mkdirp/package.json
+328 silly prepareForInstallMany adding minimist@0.0.8 from mkdirp dependencies
+329 verbose readDependencies loading dependencies from /home/ubuntu/workspace/node_modules/phpnode/node_modules/portfinder/node_modules/mkdirp/package.json
+330 silly cache add args [ 'minimist@0.0.8', null ]
+331 verbose cache add spec minimist@0.0.8
+332 silly cache add parsed spec Result {
+332 silly cache add   raw: 'minimist@0.0.8',
+332 silly cache add   scope: null,
+332 silly cache add   name: 'minimist',
+332 silly cache add   rawSpec: '0.0.8',
+332 silly cache add   spec: '0.0.8',
+332 silly cache add   type: 'version' }
+333 silly addNamed minimist@0.0.8
+334 verbose addNamed "0.0.8" is a plain semver version for minimist
+335 silly mapToRegistry name minimist
+336 silly mapToRegistry using default registry
+337 silly mapToRegistry registry https://registry.npmjs.org/
+338 silly mapToRegistry data Result {
+338 silly mapToRegistry   raw: 'minimist',
+338 silly mapToRegistry   scope: null,
+338 silly mapToRegistry   name: 'minimist',
+338 silly mapToRegistry   rawSpec: '',
+338 silly mapToRegistry   spec: 'latest',
+338 silly mapToRegistry   type: 'tag' }
+339 silly mapToRegistry uri https://registry.npmjs.org/minimist
+340 verbose addNameVersion registry:https://registry.npmjs.org/minimist not in flight; fetching
+341 verbose request uri https://registry.npmjs.org/minimist
+342 verbose request no auth needed
+343 info attempt registry request try #1 at 12:16:22 AM
+344 verbose etag W/"58564611-7279"
+345 verbose lastModified Sun, 18 Dec 2016 08:17:21 GMT
+346 http request GET https://registry.npmjs.org/minimist
+347 http 200 https://registry.npmjs.org/minimist
+348 verbose headers { server: 'nginx/1.10.1',
+348 verbose headers   'content-type': 'application/json',
+348 verbose headers   'last-modified': 'Fri, 23 Dec 2016 18:13:36 GMT',
+348 verbose headers   etag: 'W/"585d6950-72b3"',
+348 verbose headers   'content-encoding': 'gzip',
+348 verbose headers   'cache-control': 'max-age=300',
+348 verbose headers   'content-length': '5486',
+348 verbose headers   'accept-ranges': 'bytes',
+348 verbose headers   date: 'Sat, 24 Dec 2016 00:16:22 GMT',
+348 verbose headers   via: '1.1 varnish',
+348 verbose headers   age: '97',
+348 verbose headers   connection: 'keep-alive',
+348 verbose headers   'x-served-by': 'cache-ord1746-ORD',
+348 verbose headers   'x-cache': 'HIT',
+348 verbose headers   'x-cache-hits': '3',
+348 verbose headers   'x-timer': 'S1482538582.850591,VS0,VE0',
+348 verbose headers   vary: 'Accept-Encoding' }
+349 silly get cb [ 200,
+349 silly get   { server: 'nginx/1.10.1',
+349 silly get     'content-type': 'application/json',
+349 silly get     'last-modified': 'Fri, 23 Dec 2016 18:13:36 GMT',
+349 silly get     etag: 'W/"585d6950-72b3"',
+349 silly get     'content-encoding': 'gzip',
+349 silly get     'cache-control': 'max-age=300',
+349 silly get     'content-length': '5486',
+349 silly get     'accept-ranges': 'bytes',
+349 silly get     date: 'Sat, 24 Dec 2016 00:16:22 GMT',
+349 silly get     via: '1.1 varnish',
+349 silly get     age: '97',
+349 silly get     connection: 'keep-alive',
+349 silly get     'x-served-by': 'cache-ord1746-ORD',
+349 silly get     'x-cache': 'HIT',
+349 silly get     'x-cache-hits': '3',
+349 silly get     'x-timer': 'S1482538582.850591,VS0,VE0',
+349 silly get     vary: 'Accept-Encoding' } ]
+350 verbose get saving minimist to /home/ubuntu/.npm/registry.npmjs.org/minimist/.cache.json
+351 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+352 silly mapToRegistry name minimist
+353 silly mapToRegistry using default registry
+354 silly mapToRegistry registry https://registry.npmjs.org/
+355 silly mapToRegistry data Result {
+355 silly mapToRegistry   raw: 'minimist',
+355 silly mapToRegistry   scope: null,
+355 silly mapToRegistry   name: 'minimist',
+355 silly mapToRegistry   rawSpec: '',
+355 silly mapToRegistry   spec: 'latest',
+355 silly mapToRegistry   type: 'tag' }
+356 silly mapToRegistry uri https://registry.npmjs.org/minimist
+357 verbose addRemoteTarball https://registry.npmjs.org/minimist/-/minimist-0.0.8.tgz not in flight; adding
+358 verbose addRemoteTarball [ 'https://registry.npmjs.org/minimist/-/minimist-0.0.8.tgz',
+358 verbose addRemoteTarball   '857fcabfc3397d2625b8228262e86aa7a011b05d' ]
+359 info retry fetch attempt 1 at 12:16:22 AM
+360 info attempt registry request try #1 at 12:16:22 AM
+361 http fetch GET https://registry.npmjs.org/minimist/-/minimist-0.0.8.tgz
+362 http fetch 200 https://registry.npmjs.org/minimist/-/minimist-0.0.8.tgz
+363 silly fetchAndShaCheck shasum 857fcabfc3397d2625b8228262e86aa7a011b05d
+364 verbose addTmpTarball /tmp/npm-6483-1085048b/registry.npmjs.org/minimist/-/minimist-0.0.8.tgz not in flight; adding
+365 verbose addTmpTarball already have metadata; skipping unpack for minimist@0.0.8
+366 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+367 silly cache afterAdd minimist@0.0.8
+368 verbose afterAdd /home/ubuntu/.npm/minimist/0.0.8/package/package.json not in flight; writing
+369 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+370 verbose afterAdd /home/ubuntu/.npm/minimist/0.0.8/package/package.json written
+371 silly install resolved [ { name: 'minimist',
+371 silly install resolved     version: '0.0.8',
+371 silly install resolved     description: 'parse argument options',
+371 silly install resolved     main: 'index.js',
+371 silly install resolved     devDependencies: { tape: '~1.0.4', tap: '~0.4.0' },
+371 silly install resolved     scripts: { test: 'tap test/*.js' },
+371 silly install resolved     testling: { files: 'test/*.js', browsers: [Object] },
+371 silly install resolved     repository: { type: 'git', url: 'git://github.com/substack/minimist.git' },
+371 silly install resolved     homepage: 'https://github.com/substack/minimist',
+371 silly install resolved     keywords: [ 'argv', 'getopt', 'parser', 'optimist' ],
+371 silly install resolved     author:
+371 silly install resolved      { name: 'James Halliday',
+371 silly install resolved        email: 'mail@substack.net',
+371 silly install resolved        url: 'http://substack.net' },
+371 silly install resolved     license: 'MIT',
+371 silly install resolved     bugs: { url: 'https://github.com/substack/minimist/issues' },
+371 silly install resolved     _id: 'minimist@0.0.8',
+371 silly install resolved     dist:
+371 silly install resolved      { shasum: '857fcabfc3397d2625b8228262e86aa7a011b05d',
+371 silly install resolved        tarball: 'https://registry.npmjs.org/minimist/-/minimist-0.0.8.tgz' },
+371 silly install resolved     _from: 'minimist@0.0.8',
+371 silly install resolved     _npmVersion: '1.4.3',
+371 silly install resolved     _npmUser: { name: 'substack', email: 'mail@substack.net' },
+371 silly install resolved     maintainers: [ [Object] ],
+371 silly install resolved     directories: {},
+371 silly install resolved     _shasum: '857fcabfc3397d2625b8228262e86aa7a011b05d',
+371 silly install resolved     _resolved: 'https://registry.npmjs.org/minimist/-/minimist-0.0.8.tgz' } ]
+372 info install minimist@0.0.8 into /home/ubuntu/workspace/node_modules/phpnode/node_modules/portfinder/node_modules/mkdirp
+373 info installOne minimist@0.0.8
+374 verbose installOne of minimist to /home/ubuntu/workspace/node_modules/phpnode/node_modules/portfinder/node_modules/mkdirp not in flight; installing
+375 verbose correctMkdir /home/ubuntu/.npm/_locks correctMkdir not in flight; initializing
+376 verbose lock using /home/ubuntu/.npm/_locks/minimist-d0eabbe7725d9f0c.lock for /home/ubuntu/workspace/node_modules/phpnode/node_modules/portfinder/node_modules/mkdirp/node_modules/minimist
+377 silly install write writing minimist 0.0.8 to /home/ubuntu/workspace/node_modules/phpnode/node_modules/portfinder/node_modules/mkdirp/node_modules/minimist
+378 verbose unbuild node_modules/phpnode/node_modules/portfinder/node_modules/mkdirp/node_modules/minimist
+379 silly gentlyRm /home/ubuntu/workspace/node_modules/phpnode/node_modules/portfinder/node_modules/mkdirp/node_modules/minimist is being purged from base /home/ubuntu/workspace
+380 verbose gentlyRm don't care about contents; nuking /home/ubuntu/workspace/node_modules/phpnode/node_modules/portfinder/node_modules/mkdirp/node_modules/minimist
+381 verbose tar unpack /home/ubuntu/.npm/minimist/0.0.8/package.tgz
+382 verbose tar unpacking to /home/ubuntu/workspace/node_modules/phpnode/node_modules/portfinder/node_modules/mkdirp/node_modules/minimist
+383 silly gentlyRm /home/ubuntu/workspace/node_modules/phpnode/node_modules/portfinder/node_modules/mkdirp/node_modules/minimist is being purged
+384 verbose gentlyRm don't care about contents; nuking /home/ubuntu/workspace/node_modules/phpnode/node_modules/portfinder/node_modules/mkdirp/node_modules/minimist
+385 silly gunzTarPerm modes [ '755', '644' ]
+386 silly gunzTarPerm extractEntry package.json
+387 silly gunzTarPerm extractEntry LICENSE
+388 silly gunzTarPerm extractEntry index.js
+389 silly gunzTarPerm extractEntry .travis.yml
+390 silly gunzTarPerm extractEntry example/parse.js
+391 silly gunzTarPerm extractEntry readme.markdown
+392 silly gunzTarPerm extractEntry test/dash.js
+393 silly gunzTarPerm extractEntry test/default_bool.js
+394 silly gunzTarPerm extractEntry test/dotted.js
+395 silly gunzTarPerm extractEntry test/long.js
+396 silly gunzTarPerm extractEntry test/parse.js
+397 silly gunzTarPerm extractEntry test/parse_modified.js
+398 silly gunzTarPerm extractEntry test/short.js
+399 silly gunzTarPerm extractEntry test/whitespace.js
+400 verbose write writing to /home/ubuntu/workspace/node_modules/phpnode/node_modules/portfinder/node_modules/mkdirp/node_modules/minimist/package.json
+401 info preinstall minimist@0.0.8
+402 verbose readDependencies loading dependencies from /home/ubuntu/workspace/node_modules/phpnode/node_modules/portfinder/node_modules/mkdirp/node_modules/minimist/package.json
+403 verbose readDependencies loading dependencies from /home/ubuntu/workspace/node_modules/phpnode/node_modules/portfinder/node_modules/mkdirp/node_modules/minimist/package.json
+404 silly install resolved []
+405 verbose about to build /home/ubuntu/workspace/node_modules/phpnode/node_modules/portfinder/node_modules/mkdirp/node_modules/minimist
+406 info build /home/ubuntu/workspace/node_modules/phpnode/node_modules/portfinder/node_modules/mkdirp/node_modules/minimist
+407 info linkStuff minimist@0.0.8
+408 silly linkStuff minimist@0.0.8 has /home/ubuntu/workspace/node_modules/phpnode/node_modules/portfinder/node_modules/mkdirp/node_modules as its parent node_modules
+409 verbose linkBins minimist@0.0.8
+410 verbose linkMans minimist@0.0.8
+411 verbose rebuildBundles minimist@0.0.8
+412 info install minimist@0.0.8
+413 info postinstall minimist@0.0.8
+414 verbose unlock done using /home/ubuntu/.npm/_locks/minimist-d0eabbe7725d9f0c.lock for /home/ubuntu/workspace/node_modules/phpnode/node_modules/portfinder/node_modules/mkdirp/node_modules/minimist
+415 verbose about to build /home/ubuntu/workspace/node_modules/phpnode/node_modules/portfinder/node_modules/mkdirp
+416 info build /home/ubuntu/workspace/node_modules/phpnode/node_modules/portfinder/node_modules/mkdirp
+417 info linkStuff mkdirp@0.5.1
+418 silly linkStuff mkdirp@0.5.1 has /home/ubuntu/workspace/node_modules/phpnode/node_modules/portfinder/node_modules as its parent node_modules
+419 verbose linkBins mkdirp@0.5.1
+420 verbose link bins [ { mkdirp: 'bin/cmd.js' },
+420 verbose link bins   '/home/ubuntu/workspace/node_modules/phpnode/node_modules/portfinder/node_modules/.bin',
+420 verbose link bins   false ]
+421 verbose linkMans mkdirp@0.5.1
+422 verbose rebuildBundles mkdirp@0.5.1
+423 verbose rebuildBundles [ 'minimist' ]
+424 silly gentlyRm /home/ubuntu/workspace/node_modules/phpnode/node_modules/portfinder/node_modules/.bin/mkdirp is being purged
+425 verbose gentlyRm don't care about contents; nuking /home/ubuntu/workspace/node_modules/phpnode/node_modules/portfinder/node_modules/.bin/mkdirp
+426 info install mkdirp@0.5.1
+427 info postinstall mkdirp@0.5.1
+428 verbose unlock done using /home/ubuntu/.npm/_locks/mkdirp-5fb2ccecb3864431.lock for /home/ubuntu/workspace/node_modules/phpnode/node_modules/portfinder/node_modules/mkdirp
+429 verbose about to build /home/ubuntu/workspace/node_modules/phpnode/node_modules/portfinder
+430 info build /home/ubuntu/workspace/node_modules/phpnode/node_modules/portfinder
+431 info linkStuff portfinder@1.0.10
+432 silly linkStuff portfinder@1.0.10 has /home/ubuntu/workspace/node_modules/phpnode/node_modules as its parent node_modules
+433 verbose linkBins portfinder@1.0.10
+434 verbose linkMans portfinder@1.0.10
+435 verbose rebuildBundles portfinder@1.0.10
+436 verbose rebuildBundles [ '.bin', 'async', 'mkdirp' ]
+437 info install portfinder@1.0.10
+438 info postinstall portfinder@1.0.10
+439 verbose unlock done using /home/ubuntu/.npm/_locks/portfinder-f3ca6b009d76aa09.lock for /home/ubuntu/workspace/node_modules/phpnode/node_modules/portfinder
+440 verbose about to build /home/ubuntu/workspace/node_modules/phpnode
+441 info build /home/ubuntu/workspace/node_modules/phpnode
+442 info linkStuff phpnode@1.1.9
+443 silly linkStuff phpnode@1.1.9 has /home/ubuntu/workspace/node_modules as its parent node_modules
+444 verbose linkBins phpnode@1.1.9
+445 verbose linkMans phpnode@1.1.9
+446 verbose rebuildBundles phpnode@1.1.9
+447 verbose rebuildBundles [ 'portfinder' ]
+448 info install phpnode@1.1.9
+449 verbose unsafe-perm in lifecycle true
+450 info phpnode@1.1.9 Failed to exec install script
+451 verbose unlock done using /home/ubuntu/.npm/_locks/phpnode-2df7c90a5b3ffd20.lock for /home/ubuntu/workspace/node_modules/phpnode
+452 verbose stack Error: phpnode@1.1.9 install: `node scripts/appdir.js`
+452 verbose stack Exit status 1
+452 verbose stack     at EventEmitter.<anonymous> (/home/ubuntu/.nvm/versions/node/v4.6.1/lib/node_modules/npm/lib/utils/lifecycle.js:217:16)
+452 verbose stack     at emitTwo (events.js:87:13)
+452 verbose stack     at EventEmitter.emit (events.js:172:7)
+452 verbose stack     at ChildProcess.<anonymous> (/home/ubuntu/.nvm/versions/node/v4.6.1/lib/node_modules/npm/lib/utils/spawn.js:24:14)
+452 verbose stack     at emitTwo (events.js:87:13)
+452 verbose stack     at ChildProcess.emit (events.js:172:7)
+452 verbose stack     at maybeClose (internal/child_process.js:829:16)
+452 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
+453 verbose pkgid phpnode@1.1.9
+454 verbose cwd /home/ubuntu/workspace
+455 error Linux 4.2.0-c9
+456 error argv "/home/ubuntu/.nvm/versions/node/v4.6.1/bin/node" "/home/ubuntu/.nvm/versions/node/v4.6.1/bin/npm" "install" "phpnode"
+457 error node v4.6.1
+458 error npm  v2.15.9
+459 error code ELIFECYCLE
+460 error phpnode@1.1.9 install: `node scripts/appdir.js`
+460 error Exit status 1
+461 error Failed at the phpnode@1.1.9 install script 'node scripts/appdir.js'.
+461 error This is most likely a problem with the phpnode package,
+461 error not with npm itself.
+461 error Tell the author that this fails on your system:
+461 error     node scripts/appdir.js
+461 error You can get information on how to open an issue for this project with:
+461 error     npm bugs phpnode
+461 error Or if that isn't available, you can get their info via:
+461 error
+461 error     npm owner ls phpnode
+461 error There is likely additional logging output above.
+462 verbose exit [ 1, true ]
+463 verbose unbuild node_modules/phpnode
+464 info preuninstall phpnode@1.1.9
+465 info uninstall phpnode@1.1.9
+466 verbose unbuild rmStuff phpnode@1.1.9 from /home/ubuntu/workspace/node_modules
+467 info postuninstall phpnode@1.1.9
+468 silly gentlyRm /home/ubuntu/workspace/node_modules/phpnode is being purged from base /home/ubuntu/workspace
+469 verbose gentlyRm don't care about contents; nuking /home/ubuntu/workspace/node_modules/phpnode
+470 silly vacuum-fs purging /home/ubuntu/workspace/node_modules/phpnode
+471 silly vacuum-fs quitting because other entries in /home/ubuntu/workspace/node_modules
