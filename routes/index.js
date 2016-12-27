@@ -4,7 +4,7 @@ var router = express.Router();
 var config = require('../app.config');
 
 var smtpTransport = nodemailer.createTransport("SMTP", {
-  service: "Gmail",
+  service: "SendGrid",
   auth: {
     user: config.sendgrid.username,
     pass: config.sendgrid.password
@@ -29,7 +29,7 @@ router.get('/contact/', function(req, res, next) {
 /* POST for email message sent to contact */
 router.post('/contact/', function(req, res, next){
   var mailOptions={
-    to : req.body.email,
+    to : 'cmerrill99@gmail.com',
     subject : "Phytofare contact email from " + req.body.name,
     text : req.body.message
   }
