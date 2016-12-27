@@ -13,10 +13,24 @@ a {
 
 .navbar-nav > li > a {padding-top:5px !important; padding-bottom:5px !important; color:#FFFFFF !important;}
 .navbar .navbar-brand{ padding: 0px 12px;font-size: 16px;line-height: 28px; margin: 0px; }
-.navbar {min-height:28px !important; background-color:#3EA9F5;}
+.navbar {min-height:28px !important; }
+.navbar-background{background-color:#3EA9F5;}
 
 html,body{
   width:100%;
+}
+
+.logo-space{
+  position:fixed;
+  width:300px;
+  border-radius: 50%;
+  top:-100px;
+  left:40%;
+  background-color: #3EA9F5;
+  z-index:10;
+}
+.logo-space img {
+  padding: 35% 0 7%;
 }
 
 #myCarousel{
@@ -24,7 +38,7 @@ html,body{
 }
 
 .overlay{
-  background:url(../images/phytofare.png) center center no-repeat;
+  background:url(../images/logo.png) center center no-repeat;
   position:absolute;
   z-index:10;
   width:100%;
