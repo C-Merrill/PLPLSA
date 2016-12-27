@@ -1,12 +1,13 @@
 var express = require('express');
 var nodemailer = require('nodemailer');
 var router = express.Router();
+var config = require('../app.config');
 
 var smtpTransport = nodemailer.createTransport("SMTP", {
   service: "Gmail",
   auth: {
-    user: "",
-    pass: ""
+    user: config.sendgrid.username,
+    pass: config.sendgrid.password
   }
 });
 
