@@ -18,7 +18,7 @@ router.get('/', function(req, res, next) {
 
 /* GET about page */
 router.get('/about/', function(req, res, next) {
-    res.render('index', { title: 'About Phytofare'});
+    res.render('about', { title: 'About Plandai SA'});
 });
 
 /* GET contact page */
