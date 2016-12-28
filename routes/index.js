@@ -13,7 +13,7 @@ var smtpTransport = nodemailer.createTransport("SMTP", {
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Phytofare' });
+  res.render('index', { title: 'Plandai - South Africa' });
 });
 
 /* GET about page */
