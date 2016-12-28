@@ -12,7 +12,6 @@ a {
 }
 
 .navbar-nav > li > a {padding-top:5px !important; padding-bottom:5px !important; color:#FFFFFF !important;}
-
 .navbar .navbar-brand{ padding: 0px 12px;font-size: 16px;line-height: 28px; margin: 0px; }
 .navbar {min-height:28px !important; }
 .navbar-background{background-color:#3EA9F5;}
@@ -61,4 +60,20 @@ html,body{
 
 .page-header{
   font-family: "Source Sans Pro", sans-serif;
+}
+
+.breadcrumb{
+  background: #86BE3F; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, #86BE3F, #E9FFE6); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #86BE3F, #E9FFE6); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #86BE3F, #E9FFE6); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #86BE3F, #E9FFE6); /* Standard syntax */
+}
+
+.breadcrumb a{
+  color:#0086BA;
+}
+.breadcrumb a:hover{
+  color:#005170;
+  text-decoration:none;
 }
