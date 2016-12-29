@@ -17,8 +17,23 @@ router.get('/', function(req, res, next) {
 });
 
 /* GET about page */
-router.get('/about/', function(req, res, next) {
-    res.render('about', { title: 'About Plandai SA'});
+router.get('/about', function(req, res, next) {
+  res.redirect('/about/who');
+});
+
+/* GET about who we are page */
+router.get('/about/who', function(req, res, next) {
+    res.render('about', { title: 'About Plandai SA', partial: 'about_parts/who_we_are'});
+});
+
+/* GET about key personnel page */
+router.get('/about/personnel', function(req, res, next){
+  res.render('about', { title: 'About Plandai SA', partial: 'about_parts/key_personnel'});
+});
+
+/* GET about company credo page */
+router.get('/about/credo', function(req, res, next){
+  res.render('about', { title: 'About Plandai SA', partial: 'about_parts/comp_credo'});
 });
 
 /* GET contact page */
