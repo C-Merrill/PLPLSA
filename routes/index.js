@@ -69,4 +69,16 @@ router.post('/contact/', function(req, res, next){
   });
 });
 
+router.get('/privacy_policy', function(req,res,next){
+  res.render('privacy', {title: 'Privacy Policy - PlandaiSA'});
+});
+
+router.get('/safe_harbor', function(req, res, next){
+  res.render('safe_harbor', {title: 'Safe Harbor - PlandaiSA'});
+});
+
+router.get('/articles', function(req, res, next){
+  res.render('articles', {title: 'Articles - PlandaiSA' });
+});
+
 module.exports = router;

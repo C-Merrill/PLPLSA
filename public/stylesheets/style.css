@@ -83,6 +83,13 @@ html,body{
   border-radius:4px;
 }
 
+.section-head-solid{
+  background: #86BE3F;
+  text-align:center;
+  padding:1px 1px;
+  border-radius:4px;
+}
+
 #footer-nav ul
 {
     margin: 0;

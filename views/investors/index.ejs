@@ -1,2 +1,23 @@
 <%include ../layout%>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <h1 class="page-header">Investors</h1>
+      <ol class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li class="active">Investors</li>
+      </ol>
+    </div>
+  </div>
+  <div class="row">
+    <div class="sidebar col-sm-2">
+      <h5><a href='#'>SEC Filings</a></h5>
+      <h5><a href='/investors/press'>Press Release</a></h5>
+      <h5><a href='/investors/shareholder_update'>Shareholder Update</a></h5>
+    </div>
+    <div class="content col-sm-8">
+      <%- include(partial) %>
+    </div>
+  </div>
+</div>
 <%include ../foot%>
