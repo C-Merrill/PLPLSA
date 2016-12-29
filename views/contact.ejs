@@ -46,34 +46,77 @@
   </div>
   
   <div class="row">
-    <div class="col-md-8">
-      <h3>Send us a Message</h3>
+    <div class="col-sm-12">
+      <h3 class="section-head">Send us a Message</h3>
       <form name="sentMessage" id="contactForm" novalidate>
-        <div class="control-group form-group">
-          <div class="controls">
-            <label>Full Name:</label>
-            <input type="text" class="form-control" id="name" required data-validation-required-message="Please enter your name.">
-            <p class="help-block"></p>
+        <div class="row">
+          <div class="col-md-6 col-sm-12">
+            <div class="control-group form-group form-inline">
+             <div class="controls row">
+               <label class="col-sm-3">Full Name:</label>
+               <input type="text" class="form-control col-sm-9" name="name" id="name" required data-validation-required-message="Please enter your name.">
+               <p class="help-block"></p>
+             </div>
+            </div>
+            <div class="control-group form-group form-inline">
+              <div class="controls row">
+                <label class="col-sm-3">Company:</label>
+                <input type="text" class="form-control col-sm-9" name="company" id="company">
+              </div>
+            </div>
+            <div class="control-group form-group form-inline">
+             <div class="controls row">
+               <label class="col-sm-3">Phone Number:</label>
+               <input type="tel" class="form-control col-sm-9" name="phone" id="phone">
+             </div>
+            </div>
+            <div class="control-group form-group form-inline">
+              <div class="controls row">
+                <label class="col-sm-3">Email Address:</label>
+                <input type="email" class="form-control col-sm-9" name="email" id="email" required data-validation-required-message="Please enter your email address.">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div class="control-group form-group form-inline">
+              <div class="controls row">
+                <label class="col-sm-3">Address 1:</label>
+                <input type="text" class="form-control col-sm-9" name="address1" id="address1">
+              </div>
+            </div>
+            <div class="control-group form-group form-inline">
+              <div class="controls row">
+                <label class="col-sm-3">Address 2:</label>
+                <input type="text" class="form-control col-sm-9" name="address2" id="address2">
+              </div>
+            </div>
+            <div class="control-group form-group form-inline">
+              <div class="controls row">
+                <label class="col-sm-3">City:</label>
+                <input type="text" class="form-control col-sm-9" name="city" id="city">
+              </div>
+            </div>
+            <div class="control-group form-group form-inline">
+              <div class="controls row">
+                <label class="col-sm-3">Province / State:</label>
+                <input type="text" class="form-control col-sm-9" name="state" id="state" >
+              </div>
+            </div>
+            <div class="control-group form-group form-inline">
+              <div class="controls row">
+                <label class="col-sm-3">Zip / Postal code:</label>
+                <input type="text" class="form-control col-sm-9" name="zippostal" id="zippostal">
+              </div>
+            </div>
+            
+          </div>
+          <div class="control-group form-group col-md-10">
+            <div class="controls">
+              <label>Message:</label>
+              <textarea rows="10" cols="100" class="form-control" id="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
+            </div>
           </div>
         </div>
-        <div class="control-group form-group">
-          <div class="controls">
-            <label>Phone Number:</label>
-            <input type="tel" class="form-control" id="phone" required data-validation-required-message="Please enter your phone number.">
-          </div>
-        </div>
-        <div class="control-group form-group">
-          <div class="controls">
-            <label>Email Address:</label>
-            <input type="email" class="form-control" id="email" required data-validation-required-message="Please enter your email address.">
-          </div>
-        </div>
-        <div class="control-group form-group">
-          <div class="controls">
-            <label>Message:</label>
-            <textarea rows="10" cols="100" class="form-control" id="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
-          </div>
-         </div>
         <div id="success"></div>
         <!-- For success/fail messages -->
         <button type="submit" class="btn btn-primary">Send Message</button>
