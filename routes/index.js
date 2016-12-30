@@ -45,6 +45,7 @@ router.get('/contact/', function(req, res, next) {
 router.post('/contact/', function(req, res, next){
   var mailOptions={
     to : 'cmerrill99@gmail.com',
+    from: req.body.email,
     subject : "Phytofare contact email from " + req.body.name,
     text : req.body.message
   }
