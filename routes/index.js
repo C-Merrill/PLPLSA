@@ -1,5 +1,6 @@
 var express = require('express');
 var nodemailer = require('nodemailer');
+var request = require('request');
 var router = express.Router();
 var config = require('../app.config');
 
@@ -43,31 +44,47 @@ router.get('/contact/', function(req, res, next) {
 
 /* POST for email message sent to contact */
 router.post('/contact/', function(req, res, next){
-  var mailOptions={
-    to : 'cmerrill99@gmail.com',
-    from: req.body.email,
-    subject : "Phytofare contact email from " + req.body.name,
-    text : req.body.message
+  console.log(req.body);
+  if (req.body['g-recaptcha-response'] === null || req.body['g-recaptcha-response'] === '' || req.body['g-recaptcha-response'] === undefined){
+    return res.status(500).send({'error':1, 'errorMessage': 'Please select recaptcha'});
   }
-  console.log(mailOptions);
-  smtpTransport.sendMail(mailOptions, function(error, response){
-    if(error){
-      console.log(error);
-      var resp = {
-        error: error,
-        status: 500
-      }
-      res.status(500).send({error: error});
-      //res.end(JSON.stringify(resp));
-    }else{
-      console.log("Message sent: " + response.message);
-      var resp = {
-        success: response.message,
-        status: 200
-      }
-      res.end(JSON.stringify(resp));
+  
+  var secretKey = config.recaptcha_secret;
+  // req.connection.remoteAddress will provide IP address of connected user.
+  var verificationUrl = "https://www.google.com/recaptcha/api/siteverify?secret=" + secretKey + "&response=" + req.body['g-recaptcha-response'] + "&remoteip=" + req.connection.remoteAddress;
+  // Hitting GET request to the URL, Google will respond with success or error scenario.
+  request(verificationUrl,function(error,response,body) {
+    body = JSON.parse(body);
+    if(body.success !== undefined && !body.success) {
+      return res.status(500).send({"error" : 1,"errorMessage" : "Failed captcha verification"});
     }
+    var mailOptions={
+      to : 'cmerrill99@gmail.com',
+      from: req.body.email,
+      subject : "Phytofare contact email from " + req.body.name,
+      text : req.body.message
+    }
+    console.log(mailOptions);
+    smtpTransport.sendMail(mailOptions, function(error, response){
+      if(error){
+        console.log(error);
+        var resp = {
+          error: error,
+          status: 500
+        }
+        res.status(500).send({error: error});
+        //res.end(JSON.stringify(resp));
+      }else{
+        console.log("Message sent: " + response.message);
+        var resp = {
+          success: response.message,
+          status: 200
+        }
+        res.end(JSON.stringify(resp));
+      }
+    });
   });
+  
 });
 
 router.get('/privacy_policy', function(req,res,next){

@@ -4,7 +4,6 @@
   */
 /* global $ */
 $(function() {
-
     $("#contactForm input,#contactForm textarea").jqBootstrapValidation({
         preventSubmit: true,
         submitError: function($form, event, errors) {
@@ -26,13 +25,8 @@ $(function() {
             $.ajax({
                 url: "/contact",
                 type: "POST",
-                data: {
-                    name: name, 
-                    phone: phone,
-                    email: email,
-                    message: message
-                },
-                cache: false,
+                data: $form.serialize(),
+                cache: true,
                 success: function() {
                     // Success message
                     $('#success').html("<div class='alert alert-success'>");
