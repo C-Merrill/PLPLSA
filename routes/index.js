@@ -57,20 +57,20 @@ router.post('/contact/', function(req, res, next){
     if(body.success !== undefined && !body.success) {
       return res.status(500).send({"error" : 1,"errorMessage" : "Failed captcha verification"});
     }
-    var email_message = "_Contact Info_"
-    + "Name: " + req.body.name + "\n"
-    + "Company: " + req.body.company + "\n"
-    + "Email: " + req.body.email + "\n"
-    + "Phone: " + req.body.phone + "\n"
-    + "Address:\n"
-    + "   " + req.body.address1 + "\n";
+    var email_message = "<u>Contact Info</u><br/>"
+    + "Name: " + req.body.name + "<br/>"
+    + "Company: " + req.body.company + "<br/>"
+    + "Email: " + req.body.email + "<br/>"
+    + "Phone: " + req.body.phone + "<br/>"
+    + "Address:<br/>"
+    + "   " + req.body.address1 + "<br/>";
     if (req.body.address2!="")
     {
-      email_message += "   " + req.body.address2 + "\n";
+      email_message += "   " + req.body.address2 + "<br/>";
     }
-    email_message+= "   " + req.body.city + ", " + req.body.state + "\n"
-    + "   " + req.body.zippostal + " " + req.body.country + "\n\n"
-    + "_Message_\n" + req.body.message;
+    email_message+= "   " + req.body.city + ", " + req.body.state + "<br/>"
+    + "   " + req.body.zippostal + " " + req.body.country + "<br/><br/>"
+    + "<u>Message</u><br/>" + req.body.message;
     
     console.log(email_message);
     
@@ -78,7 +78,7 @@ router.post('/contact/', function(req, res, next){
       to : 'cmerrill99@gmail.com',
       from: req.body.email,
       subject : "Phytofare contact email from " + req.body.name,
-      text : email_message
+      html : email_message
     }
 
     smtpTransport.sendMail(mailOptions, function(error, response){
