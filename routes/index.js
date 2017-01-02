@@ -57,11 +57,28 @@ router.post('/contact/', function(req, res, next){
     if(body.success !== undefined && !body.success) {
       return res.status(500).send({"error" : 1,"errorMessage" : "Failed captcha verification"});
     }
+    var email_message = "<u>Contact Info</u>"
+    + "Name: " + req.body.name + "\n"
+    + "Company: " + req.body.company + "\n"
+    + "Email: " + req.body.email + "\n"
+    + "Phone: " + req.body.phone + "\n"
+    + "Address:\n"
+    + "\t" + req.body.address1 + "\n";
+    if (req.body.address2!="")
+    {
+      email_message += "\t" + req.body.address2 + "\n";
+    }
+    email_message+= "\t" + req.body.city + ", " + req.body.state + "\n"
+    + "\t" + req.body.zippostal + " " + req.body.country + "\n\n"
+    + "<u>Message</u>\n" + req.body.message;
+    
+    console.log(email_message);
+    
     var mailOptions={
       to : 'cmerrill99@gmail.com',
       from: req.body.email,
       subject : "Phytofare contact email from " + req.body.name,
-      text : req.body.message
+      text : email_message
     }
 
     smtpTransport.sendMail(mailOptions, function(error, response){
