@@ -4,6 +4,23 @@ var request = require('request');
 var router = express.Router();
 var config = require('../app.config');
 
+var articles = [
+  {title:'Why Drinking Tea May Help Prevent and Manage Type 2 Diabetes',
+  article:'Diabetes_article.pdf'},
+  {title:'Plandai and Diabetes',
+  article:'Diabetes_Plandai.pdf'},
+  {title:'Green Tea for Diabetes',
+  article:'Green_Tea_For_Diabetes_Green_Tea_in_3.pdf'},
+  {title:'Grean tea extract shows anti-diabetic potential',
+  article:'Green_Tea_report_Diabetes.pdf'},
+  {title:'Clinical Trial in Type 2 Diabetes Patients',
+  article:'Proposal_for_ph2_diabetes_clinical_trial_ag.pdf'},
+  {title:'Green Tea Catechins in Prevention of Metabolic Syndrome',
+  article:'study-26_teavigo.pdf'},
+  {title:'USA Diabetes Statistics',
+  article:'USA.pdf'}
+  ];
+
 var smtpTransport = nodemailer.createTransport("SMTP", {
   service: "SendGrid",
   auth: {
@@ -70,7 +87,7 @@ router.post('/contact/', function(req, res, next){
     console.log(email_message);
     
     var mailOptions={
-      to : 'cmerrill99@gmail.com',
+      to : 'info@plandaibiotech.com',
       from: req.body.email,
       subject : "Phytofare contact email from " + req.body.name,
       html : email_message
@@ -90,7 +107,7 @@ router.post('/contact/', function(req, res, next){
         var resp = {
           success: response.message,
           status: 200
-        }
+        };
         res.end(JSON.stringify(resp));
       }
     });
@@ -119,12 +136,11 @@ router.post('/contact/', function(req, res, next){
         var resp = {
           success: response.message,
           status: 200
-        }
+        };
         res.end(JSON.stringify(resp));
       }
-    })
+    });
   });
-  
 });
 
 router.get('/privacy_policy', function(req,res,next){
@@ -136,7 +152,15 @@ router.get('/safe_harbor', function(req, res, next){
 });
 
 router.get('/articles', function(req, res, next){
-  res.render('articles', {title: 'Articles - PlandaiSA' });
+  res.render('articles', {title: 'Articles - PlandaiSA', articles: articles, preview:false });
+});
+
+router.get('/articles/:id', function(req,res,next){
+  var id = req.params.id;
+  if (id < 0) res.redirect(0);
+  if (id >= articles.length) res.redirect(articles.length - 1);
+  console.log(id);
+  res.render('articles', {title: 'Articles-PlandaiSA', articles: articles, preview:true, id:id});
 });
 
 module.exports = router;

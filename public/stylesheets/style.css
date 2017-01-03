@@ -50,6 +50,15 @@ html,body{
   width:100%;
 }
 
+.carousel-caption a{
+  color:#FFFFFF;
+  text-decoration: none;
+}
+
+.carousel-caption a:hover{
+  color:#DDDDDD;
+}
+
 .overlay{
   background:url(../images/logo.png) center center no-repeat;
   position:absolute;
