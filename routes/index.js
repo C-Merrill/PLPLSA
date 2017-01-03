@@ -32,11 +32,6 @@ router.get('/about/personnel', function(req, res, next){
   res.render('about', { title: 'About Plandai SA', partial: 'about_parts/key_personnel'});
 });
 
-/* GET about company credo page */
-router.get('/about/credo', function(req, res, next){
-  res.render('about', { title: 'About Plandai SA', partial: 'about_parts/comp_credo'});
-});
-
 /* GET contact page */
 router.get('/contact/', function(req, res, next) {
   res.render('contact', { title: 'Contact Us' });

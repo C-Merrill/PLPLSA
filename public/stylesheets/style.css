@@ -115,3 +115,19 @@ html,body{
   margin:auto;
   padding-left:50px;
 }
+
+.privacy_policy{
+  font-style:italic;
+}
+
+.privacy_policy h5{
+  font-weight:bold;
+}
+
+.site-intro{
+  font-size:18px;
+}
+
+.panels{
+  margin-top:50px;
+}
