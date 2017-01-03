@@ -79,7 +79,7 @@ router.post('/contact/', function(req, res, next){
       from: req.body.email,
       subject : "Phytofare contact email from " + req.body.name,
       html : email_message
-    }
+    };
 
     smtpTransport.sendMail(mailOptions, function(error, response){
       if(error){
@@ -87,7 +87,7 @@ router.post('/contact/', function(req, res, next){
         var resp = {
           error: error,
           status: 500
-        }
+        };
         res.status(500).send({error: error});
         //res.end(JSON.stringify(resp));
       }else{
@@ -99,6 +99,35 @@ router.post('/contact/', function(req, res, next){
         res.end(JSON.stringify(resp));
       }
     });
+    
+    var autoreply = "<p>" + req.body.name + ", thank you for your message. We will try to get back to you as soon as possible.</p><br/>"
+    + "<p>Plandai Biotechnology South Africa</p>";
+    
+    mailOptions={
+      to : req.body.email,
+      from : "no-reply@plandaibiotech.com",
+      subject : "Thank you",
+      html : autoreply
+    };
+    
+    smtpTransport.sendMail(mailOptions, function(error, response){
+      if(error){
+
+        var resp = {
+          error: error,
+          status: 500
+        };
+        res.status(500).send({error: error});
+        //res.end(JSON.stringify(resp));
+      }else{
+        console.log("Message sent: " + response.message);
+        var resp = {
+          success: response.message,
+          status: 200
+        }
+        res.end(JSON.stringify(resp));
+      }
+    })
   });
   
 });
