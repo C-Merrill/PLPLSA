@@ -140,3 +140,8 @@ html,body{
 .panels{
   margin-top:50px;
 }
+
+p{
+  text-align:justify;
+  text-justify:auto;
+}
