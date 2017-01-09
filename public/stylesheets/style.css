@@ -15,7 +15,7 @@ a {
 .navbar .navbar-brand{ padding: 0px 12px;font-size: 16px;line-height: 28px; margin: 0px; }
 .navbar {min-height:28px !important; }
 .navbar-background{background-color:#3EA9F5;}
-.navbar-collapse img {height:28px; padding: 5px 0;}
+.navbar-inner img {height:28px; padding: 5px 0;}
 
 html,body{
   width:100%;
@@ -37,6 +37,7 @@ html,body{
 .logo-space {
   position:fixed;
   width:100%;
+  z-index:0;
 }
 
 .logo-space img {
@@ -44,10 +45,17 @@ html,body{
   left:40%;
   top:-30px;
   width:20%;
+  z-index:10;
 }
 
 #myCarousel{
   width:100%;
+}
+
+.img-responsive{
+  width: 100%;
+  background-position: center;
+  background-size: cover;
 }
 
 .carousel-caption a{
