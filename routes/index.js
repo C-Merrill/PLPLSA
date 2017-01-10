@@ -2,6 +2,7 @@ var express = require('express');
 var nodemailer = require('nodemailer');
 var request = require('request');
 var fs = require('fs');
+var path = require('path');
 var router = express.Router();
 var config = require('../app.config');
 
@@ -53,10 +54,10 @@ router.get('/about/personnel', function(req, res, next){
 
 /* GET about gallery page */
 router.get('/about/gallery', function(req, res, next){
-  var landscapeImgs = fs.readdirSync('./public/images/Estate/');
-  var facilityImgs = fs.readdirSync('./public/images/Facility');
-  var personnelImgs = fs.readdirSync('./public/images/Personnel');
-  var otherImgs = fs.readdirSync('./public/images/Other');
+  var landscapeImgs = fs.readdirSync('./public/images/Estate/').filter(file => !fs.statSync(path.join('./public/images/Estate',file)).isDirectory());
+  var facilityImgs = fs.readdirSync('./public/images/Facility').filter(file => !fs.statSync(path.join('./public/images/Facility',file)).isDirectory());
+  var personnelImgs = fs.readdirSync('./public/images/Personnel').filter(file => !fs.statSync(path.join('./public/images/Personnel',file)).isDirectory());
+  var otherImgs = fs.readdirSync('./public/images/Other').filter(file => !fs.statSync(path.join('./public/images/Other',file)).isDirectory());
   res.render('about', { title: 'About Plandai SA', partial: 'about_parts/gallery', landscapeImgs: landscapeImgs, facilityImgs: facilityImgs, personnelImgs: personnelImgs, otherImgs: otherImgs });
 });
 
