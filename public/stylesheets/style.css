@@ -21,6 +21,10 @@ html,body{
   width:100%;
 }
 
+.content img {
+  max-width: 100%;
+}
+
 /*.logo-space{
   position:fixed;
   width:300px;
@@ -152,4 +156,20 @@ html,body{
 p{
   text-align:justify;
   text-justify:auto;
+}
+
+.gallery-row{
+  max-height:200px;
+}
+
+.gallery-item{
+  max-height:200px;
+  padding:15px 15px;
+  
+}
+
+.gallery-item img{
+  display:block;
+  margin:auto;
+  max-height:170px;
 }

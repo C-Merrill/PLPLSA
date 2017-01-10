@@ -1,0 +1,49 @@
+<h2>Senteeko Estate</h2>
+<h4>Landscape</h4>
+<% for(var i=0; i<landscapeImgs.length; i++) { %>
+<%  if(i%3 === 0) { %>
+    <div class='row gallery-row'>
+<%  } %>
+    <div class='col-sm-4 gallery-item'>
+        <a href='/images/Estate/<%=landscapeImgs[i]%>'><img src='/images/Estate/<%=landscapeImgs[i]%>' /></a>
+    </div>
+<%  if(i%3 === 2 || i === landscapeImgs.length-1) { %>
+    </div>
+<%  } %>
+<% } %>
+<h4>Facility</h4>
+<% for(var i=0; i<facilityImgs.length; i++) { %>
+<%  if(i%3 === 0) { %>
+    <div class='row gallery-row'>
+<%  } %>
+    <div class='col-sm-4 gallery-item'>
+        <a href='/images/Facility/<%=facilityImgs[i]%>'><img src='/images/Facility/<%=facilityImgs[i]%>' /></a>
+    </div>
+<%  if(i%3 === 2 || i === facilityImgs.length-1) { %>
+    </div>
+<%  } %>
+<% } %>
+<h4>Personnel</h4>
+<% for(var i=0; i<personnelImgs.length; i++) { %>
+<%  if(i%3 === 0) { %>
+    <div class='row gallery-row'>
+<%  } %>
+    <div class='col-sm-4 gallery-item'>
+        <a href='/images/Personnel/<%=personnelImgs[i]%>'><img src='/images/Personnel/<%=personnelImgs[i]%>' /></a>
+    </div>
+<%  if(i%3 === 2 || i === personnelImgs.length-1) { %>
+    </div>
+<%  } %>
+<% } %>
+<h2>Other</h2>
+<% for(var i=0; i<otherImgs.length; i++) { %>
+<%  if(i%3 === 0) { %>
+    <div class='row gallery-row'>
+<%  } %>
+    <div class='col-sm-4 gallery-item'>
+        <a href='/images/Other/<%=otherImgs[i]%>'><img src='/images/Other/<%=otherImgs[i]%>' /></a>
+    </div>
+<%  if(i%3 === 2 || i === otherImgs.length-1) { %>
+    </div>
+<%  } %>
+<% } %>
