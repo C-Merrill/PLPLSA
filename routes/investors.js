@@ -14,4 +14,8 @@ router.get('/shareholder_update', function(req, res, next){
     res.render('investors/index', { title: 'Investors - PlandaiSA', partial: 'investor_parts/shareholder'});
 });
 
+router.get('/corporate_profile', function(req, res, next){
+    res.render('investors/index', { title: 'Investors - PlandaiSA', partial: 'investor_parts/corporate_profile'});
+});
+
 module.exports = router;
