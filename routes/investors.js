@@ -1,13 +1,15 @@
 var express = require('express');
 var router = express.Router();
 
+var recentPR = 'PR.3.2.17.1.1.pdf'
+
 /* GET investors main page */
 router.get('/', function(req, res, next){
     res.render('investors/index', { title: 'Investors - PlandaiSA', partial: 'investor_parts/inv_home' });
 });
 
 router.get('/press', function(req, res, next){
-    res.render('investors/index', { title: 'Investors - PlandaiSA', partial: 'investor_parts/press_release'});
+    res.render('investors/index', { title: 'Investors - PlandaiSA', partial: 'investor_parts/press_release', recentPR: recentPR});
 });
 
 router.get('/shareholder_update', function(req, res, next){

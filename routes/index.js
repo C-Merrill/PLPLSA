@@ -7,21 +7,48 @@ var router = express.Router();
 var config = require('../app.config');
 
 var articles = [
-  {title:'Why Drinking Tea May Help Prevent and Manage Type 2 Diabetes',
-  article:'Diabetes_article.pdf'},
-  {title:'Plandai and Diabetes',
-  article:'Diabetes_Plandai.pdf'},
-  {title:'Green Tea for Diabetes',
-  article:'Green_Tea_For_Diabetes_Green_Tea_in_3.pdf'},
-  {title:'Grean tea extract shows anti-diabetic potential',
-  article:'Green_Tea_report_Diabetes.pdf'},
-  {title:'Clinical Trial in Type 2 Diabetes Patients',
-  article:'Proposal_for_ph2_diabetes_clinical_trial_ag.pdf'},
-  {title:'Green Tea Catechins in Prevention of Metabolic Syndrome',
-  article:'study-26_teavigo.pdf'},
-  {title:'USA Diabetes Statistics',
-  article:'USA.pdf'}
-  ];
+  {
+    title:'Why Drinking Tea May Help Prevent and Manage Type 2 Diabetes',
+    article:'Diabetes_article.pdf'
+  },
+  {
+    title:'Plandai and Diabetes',
+    article:'Diabetes_Plandai.pdf'
+  },
+  {
+    title:'Green Tea for Diabetes',
+    article:'Green_Tea_For_Diabetes_Green_Tea_in_3.pdf'
+  },
+  {
+    title:'Grean tea extract shows anti-diabetic potential',
+    article:'Green_Tea_report_Diabetes.pdf'
+  },
+  {
+    title:'Clinical Trial in Type 2 Diabetes Patients',
+    article:'Proposal_for_ph2_diabetes_clinical_trial_ag.pdf'
+  },
+  {
+    title:'Green Tea Catechins in Prevention of Metabolic Syndrome',
+    article:'study-26_teavigo.pdf'
+  },
+  {
+    title:'USA Diabetes Statistics',
+    article:'USA.pdf'
+  }
+];
+  
+var prs = [
+  {
+    title:'January 10, 2017',
+    article:'Protext.PR.1.10.17.9.pdf'
+  },
+  {
+    title:'March 2, 2017',
+    article:'PR.3.2.17.1.1.pdf'
+  }
+];
+
+//TODO: use metadata and file walker to make these lists
 
 var smtpTransport = nodemailer.createTransport("SMTP", {
   service: "SendGrid",
@@ -167,12 +194,22 @@ router.get('/articles', function(req, res, next){
   res.render('articles', {title: 'Articles - PlandaiSA', articles: articles, preview:false });
 });
 
+router.get('/articles/pr', (req,res,next) => {
+  res.render('articles-press', {title: 'Press - PlandaiSA', articles: prs, preview:false });
+});
+
 router.get('/articles/:id', function(req,res,next){
   var id = req.params.id;
   if (id < 0) res.redirect(0);
   if (id >= articles.length) res.redirect(articles.length - 1);
-  console.log(id);
-  res.render('articles', {title: 'Articles-PlandaiSA', articles: articles, preview:true, id:id});
+  res.render('articles', {title: 'Articles - PlandaiSA', articles: articles, preview:true, id:id});
+});
+
+router.get('/articles/pr/:id', function(req,res,next){
+  var id=req.params.id;
+  if (id < 0) res.redirect(0);
+  if(id >= prs.length) res.redirect(prs.length - 1);
+  res.render('articles-press', {title: 'Press - PlandaiSA', articles: prs, preview:true, id:id})
 });
 
 module.exports = router;
