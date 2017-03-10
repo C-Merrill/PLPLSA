@@ -45,6 +45,10 @@ var prs = [
   {
     title:'March 2, 2017',
     article:'PR.3.2.17.1.1.pdf'
+  },
+  {
+    title:'March 7, 2017',
+    article:'Protext.PR.3.7.17.1.5.pdf'
   }
 ];
 
