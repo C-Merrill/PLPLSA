@@ -83,6 +83,10 @@ html,body{
   font-family: "Source Sans Pro", sans-serif;
 }
 
+.page-header small{
+  margin-left:20px;
+}
+
 .breadcrumb, .section-head{
   background: #86BE3F; /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(left, #86BE3F, #E9FFE6); /* For Safari 5.1 to 6.0 */
@@ -172,4 +176,8 @@ p{
   display:block;
   margin:auto;
   max-height:170px;
+}
+
+.footnotes ul{
+  list-style: none;
 }
