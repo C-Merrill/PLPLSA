@@ -67,19 +67,22 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Plandai - South Africa' });
 });
 
-/* GET about page */
+/* GET about who we are page */
 router.get('/about', function(req, res, next) {
-  res.redirect('/about/who');
+    res.render('about', { title: 'About Plandai SA', partial: 'about_parts/who_we_are'});
 });
 
-/* GET about who we are page */
-router.get('/about/who', function(req, res, next) {
-    res.render('about', { title: 'About Plandai SA', partial: 'about_parts/who_we_are'});
+/* GET about plandai sa page */
+router.get('/about/plandaiSA',(req,res,next)=>{
+  res.render('about', { title: 'About Plandai SA', partial: 'about_parts/about_plandai'});
+});
+
+router.get('/about/cannabisbio',(req,res,next)=>{
+  res.render('about', { title: 'About Cannabis Biosciences', partial: 'about_parts/about_cannabis'})
 });
 
 /* GET about key personnel page */
 router.get('/about/personnel', function(req, res, next){
-  
   res.render('about', { title: 'About Plandai SA', partial: 'about_parts/key_personnel'});
 });
 

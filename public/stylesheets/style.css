@@ -181,3 +181,7 @@ p{
 .footnotes ul{
   list-style: none;
 }
+
+.content-img{
+  margin:10px auto;
+}
