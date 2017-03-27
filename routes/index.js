@@ -8,10 +8,6 @@ var config = require('../app.config');
 
 var articles = [
   {
-    title:'Why Drinking Tea May Help Prevent and Manage Type 2 Diabetes',
-    article:'Diabetes_article.pdf'
-  },
-  {
     title:'Plandai and Diabetes',
     article:'Diabetes_Plandai.pdf'
   },
@@ -49,6 +45,10 @@ var prs = [
   {
     title:'March 7, 2017',
     article:'Protext.PR.3.7.17.1.5.pdf'
+  },
+  {
+    title:'March 27, 2017 Cannabis',
+    article:'PR.CannabisBio.3.27.17.pdf'
   }
 ];
 
