@@ -185,3 +185,8 @@ p{
 .content-img{
   margin:10px auto;
 }
+
+h4 {
+  margin-top: 20px;
+  font-style: italic;
+}
