@@ -32,7 +32,7 @@ var articles = [
     article:'USA.pdf'
   }
 ];
-  
+
 var prs = [
   {
     title:'January 10, 2017',
@@ -49,6 +49,14 @@ var prs = [
   {
     title:'March 27, 2017 Cannabis',
     article:'PR.CannabisBio.3.27.17.pdf'
+  },
+  {
+    title:'May 4, 2017',
+    article:'PR.TXTM.May.4.2017.1.f.pdf'
+  },
+  {
+    title:'May 23, 2017 Cannabis',
+    article:'Protext.PR.5.23.17.1.1.pdf'
   }
 ];
 
@@ -129,9 +137,9 @@ router.post('/contact/', function(req, res, next){
     email_message+= "   " + req.body.city + ", " + req.body.state + "<br/>"
     + "   " + req.body.zippostal + " " + req.body.country + "<br/><br/>"
     + "<u>Message</u><br/>" + req.body.message;
-    
+
     console.log(email_message);
-    
+
     var mailOptions={
       to : 'info@plandaibiotech.com',
       from: req.body.email,
@@ -157,17 +165,17 @@ router.post('/contact/', function(req, res, next){
         res.end(JSON.stringify(resp));
       }
     });
-    
+
     var autoreply = "<p>" + req.body.name + ", thank you for your message. We will try to get back to you as soon as possible.</p><br/>"
     + "<p>Plandai Biotechnology South Africa</p>";
-    
+
     mailOptions={
       to : req.body.email,
       from : "no-reply@plandaibiotech.com",
       subject : "Thank you",
       html : autoreply
     };
-    
+
     smtpTransport.sendMail(mailOptions, function(error, response){
       if(error){
 

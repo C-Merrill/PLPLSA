@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
-var recentPR = 'PR.CannabisBio.3.27.17.pdf'
+var recentPR = 'Protext.PR.5.23.17.1.1.pdf';
 
 /* GET investors main page */
 router.get('/', function(req, res, next){
