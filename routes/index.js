@@ -72,12 +72,12 @@ var smtpTransport = nodemailer.createTransport("SMTP", {
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Plandai - South Africa' });
+  res.render('index', { title: 'Protext Pharma' });
 });
 
 /* GET about who we are page */
 router.get('/about', function(req, res, next) {
-    res.render('about', { title: 'About Plandai SA', partial: 'about_parts/who_we_are'});
+    res.render('about', { title: 'About Protext', partial: 'about_parts/who_we_are'});
 });
 
 /* GET about plandai sa page */
@@ -91,7 +91,7 @@ router.get('/about/cannabisbio',(req,res,next)=>{
 
 /* GET about key personnel page */
 router.get('/about/personnel', function(req, res, next){
-  res.render('about', { title: 'About Plandai SA', partial: 'about_parts/key_personnel'});
+  res.render('about', { title: 'About Protext', partial: 'about_parts/key_personnel'});
 });
 
 /* GET about gallery page */
@@ -100,7 +100,7 @@ router.get('/about/gallery', function(req, res, next){
   var facilityImgs = fs.readdirSync('./public/images/Facility').filter(file => !fs.statSync(path.join('./public/images/Facility',file)).isDirectory());
   var personnelImgs = fs.readdirSync('./public/images/Personnel').filter(file => !fs.statSync(path.join('./public/images/Personnel',file)).isDirectory());
   var otherImgs = fs.readdirSync('./public/images/Other').filter(file => !fs.statSync(path.join('./public/images/Other',file)).isDirectory());
-  res.render('about', { title: 'About Plandai SA', partial: 'about_parts/gallery', landscapeImgs: landscapeImgs, facilityImgs: facilityImgs, personnelImgs: personnelImgs, otherImgs: otherImgs });
+  res.render('about', { title: 'About Protext', partial: 'about_parts/gallery', landscapeImgs: landscapeImgs, facilityImgs: facilityImgs, personnelImgs: personnelImgs, otherImgs: otherImgs });
 });
 
 /* GET contact page */
@@ -167,7 +167,7 @@ router.post('/contact/', function(req, res, next){
     });
 
     var autoreply = "<p>" + req.body.name + ", thank you for your message. We will try to get back to you as soon as possible.</p><br/>"
-    + "<p>Plandai Biotechnology South Africa</p>";
+    + "<p>Protext Pharma, Inc.</p>";
 
     mailOptions={
       to : req.body.email,
@@ -198,33 +198,33 @@ router.post('/contact/', function(req, res, next){
 });
 
 router.get('/privacy_policy', function(req,res,next){
-  res.render('privacy', {title: 'Privacy Policy - PlandaiSA'});
+  res.render('privacy', {title: 'Privacy Policy - Protext'});
 });
 
 router.get('/safe_harbor', function(req, res, next){
-  res.render('safe_harbor', {title: 'Safe Harbor - PlandaiSA'});
+  res.render('safe_harbor', {title: 'Safe Harbor - Protext'});
 });
 
 router.get('/articles', function(req, res, next){
-  res.render('articles', {title: 'Articles - PlandaiSA', articles: articles, preview:false });
+  res.render('articles', {title: 'Articles - Protext', articles: articles, preview:false });
 });
 
 router.get('/articles/pr', (req,res,next) => {
-  res.render('articles-press', {title: 'Press - PlandaiSA', articles: prs, preview:false });
+  res.render('articles-press', {title: 'Press - Protext', articles: prs, preview:false });
 });
 
 router.get('/articles/:id', function(req,res,next){
   var id = req.params.id;
   if (id < 0) res.redirect(0);
   if (id >= articles.length) res.redirect(articles.length - 1);
-  res.render('articles', {title: 'Articles - PlandaiSA', articles: articles, preview:true, id:id});
+  res.render('articles', {title: 'Articles - Protext', articles: articles, preview:true, id:id});
 });
 
 router.get('/articles/pr/:id', function(req,res,next){
   var id=req.params.id;
   if (id < 0) res.redirect(0);
   if(id >= prs.length) res.redirect(prs.length - 1);
-  res.render('articles-press', {title: 'Press - PlandaiSA', articles: prs, preview:true, id:id})
+  res.render('articles-press', {title: 'Press - Protext', articles: prs, preview:true, id:id})
 });
 
 module.exports = router;
