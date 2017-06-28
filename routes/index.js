@@ -4,7 +4,7 @@ var request = require('request');
 var fs = require('fs');
 var path = require('path');
 var router = express.Router();
-var config = require('../app.config');
+//var config = require('../app.config');
 
 var articles = [
   {
@@ -65,8 +65,8 @@ var prs = [
 var smtpTransport = nodemailer.createTransport("SMTP", {
   service: "SendGrid",
   auth: {
-    user: config.sendgrid.username,
-    pass: config.sendgrid.password
+    user: process.env.SENDGRID_USERNAME,
+    pass: process.env.SENDGRID_PASSWORD
   }
 });
 
@@ -114,7 +114,7 @@ router.post('/contact/', function(req, res, next){
     return res.status(500).send({'error':1, 'errorMessage': 'Please select recaptcha'});
   }
 
-  var secretKey = config.recaptcha_secret;
+  var secretKey = process.env.RECAPTCHA_SECRET;
   // req.connection.remoteAddress will provide IP address of connected user.
   var verificationUrl = "https://www.google.com/recaptcha/api/siteverify?secret=" + secretKey + "&response=" + req.body['g-recaptcha-response'] + "&remoteip=" + req.connection.remoteAddress;
   // Hitting GET request to the URL, Google will respond with success or error scenario.
