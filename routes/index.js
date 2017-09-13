@@ -30,6 +30,26 @@ var articles = [
   {
     title:'USA Diabetes Statistics',
     article:'USA.pdf'
+  },
+  {
+    title:'Commentary: Bioavailability of Flavonoids and Polyphenols: Call to Arms',
+    article:'Bioavailability_of_catechins_Hu_Ming.pdf'
+  },
+  {
+    title:'A Green Tea Extract High in Catechins Reduces Body Fat and Cardiovascular Risks in Humans',
+    article:'green_tea_reduces_body_fat.pdf'
+  },
+  {
+    title:'Green tea intake lowers fasting serum total and LDL cholesterol in adults',
+    article:'green_tea_lowers_fasting_serum.pdf'
+  },
+  {
+    title:'The Effect of Green Tea Extract Supplementation on Liver Enzymes in Patients with Nonalcoholic Fatty Liver Disease',
+    article:'green_tea_liver_enzymes.pdf'
+  },
+  {
+    title:'Effect of green tea on glucose control and insulin sensitivity',
+    article:'Green_tea_diabetes_1.pdf'
   }
 ];
   
@@ -49,6 +69,10 @@ var prs = [
   {
     title:'March 27, 2017 Cannabis',
     article:'PR.CannabisBio.3.27.17.pdf'
+  },
+  {
+    title:'September 13, 2017',
+    article:'Protext.PR.9.13.17.2.pdf'
   }
 ];
 
