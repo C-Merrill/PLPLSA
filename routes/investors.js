@@ -1,23 +1,23 @@
 var express = require('express');
 var router = express.Router();
 
-var recentPR = 'PR.CannabisBio.3.27.17.pdf'
+var recentPR = 'Protext.PR.5.23.17.1.1.pdf';
 
 /* GET investors main page */
 router.get('/', function(req, res, next){
-    res.render('investors/index', { title: 'Investors - PlandaiSA', partial: 'investor_parts/inv_home' });
+    res.render('investors/index', { title: 'Investors - Protext', partial: 'investor_parts/inv_home' });
 });
 
 router.get('/press', function(req, res, next){
-    res.render('investors/index', { title: 'Investors - PlandaiSA', partial: 'investor_parts/press_release', recentPR: recentPR});
+    res.render('investors/index', { title: 'Investors - Protext', partial: 'investor_parts/press_release', recentPR: recentPR});
 });
 
 router.get('/shareholder_update', function(req, res, next){
-    res.render('investors/index', { title: 'Investors - PlandaiSA', partial: 'investor_parts/shareholder'});
+    res.render('investors/index', { title: 'Investors - Protext', partial: 'investor_parts/shareholder'});
 });
 
 router.get('/corporate_profile', function(req, res, next){
-    res.render('investors/index', { title: 'Investors - PlandaiSA', partial: 'investor_parts/corporate_profile'});
+    res.render('investors/index', { title: 'Investors - Protext', partial: 'investor_parts/corporate_profile'});
 });
 
 module.exports = router;
