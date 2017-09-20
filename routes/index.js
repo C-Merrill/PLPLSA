@@ -50,6 +50,10 @@ var articles = [
   {
     title:'Effect of green tea on glucose control and insulin sensitivity',
     article:'Green_tea_diabetes_1.pdf'
+  },
+  {
+    title:'Medical Innovation Bill (Cannabis guidelines) - NEHAWU briefing',
+    article:'Medical_Innovation_Bill_Cannabis_guidelines.pdf'
   }
 ];
 
