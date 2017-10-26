@@ -5,22 +5,21 @@
       <h1 class="page-header">Articles</h1>
       <ol class="breadcrumb">
         <li><a href="/">Home</a></li>
-        <li class="active">Articles</li>
+        <li><a href="/articles">Articles</a></li>
+        <li class="active">Shareholder Updates</li>
       </ol>
     </div>
   </div>
   <div class="row">
     <div class="col-sm-3">
       <% for(var i = 0; i < articles.length;i++) {%>
-      <h5><a href='/articles/<%=i%>'><%=articles[i].title%></a></h5>
+      <h5><a href='/articles/shareholder/<%=i%>'><%=articles[i].title%></a></h5>
       <!-- links -->
       <% } %>
-      <h5><a href='/articles/pr/'>Press Releases</a></h5>
-      <h5><a href='/articles/shareholder/'>Shareholder Updates</a></h5>
     </div>
     <div class="col-sm-9">
-      <% if(preview){%>
-      <embed src="/articles/<%=articles[id].article %>" width="100%" height="800px" />
+      <%if(preview){%>
+      <embed src="/shareholder_updates/<%=articles[id].article %>" width="100%" height="800px" />
       <% } %>
     </div>
   </div>

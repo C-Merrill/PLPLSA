@@ -88,6 +88,13 @@ var prs = [
   }
 ];
 
+var su_archive = [
+  {
+    title:'Shareholder Update Dec. 31, 2016',
+    article:'Update_SH_12-31-16.pdf'
+  }
+]
+
 //TODO: use metadata and file walker to make these lists
 
 var smtpTransport = nodemailer.createTransport("SMTP", {
@@ -241,6 +248,10 @@ router.get('/articles/pr', (req,res,next) => {
   res.render('articles-press', {title: 'Press - Protext', articles: prs, preview:false });
 });
 
+router.get('/articles/shareholder', (req,res,next) => {
+  res.render('articles-shareholder', {title: 'Archive - Protext', articles: su_archive, preview:false });
+});
+
 router.get('/articles/:id', function(req,res,next){
   var id = req.params.id;
   if (id < 0) res.redirect(0);
@@ -253,6 +264,13 @@ router.get('/articles/pr/:id', function(req,res,next){
   if (id < 0) res.redirect(0);
   if(id >= prs.length) res.redirect(prs.length - 1);
   res.render('articles-press', {title: 'Press - Protext', articles: prs, preview:true, id:id})
+});
+
+router.get('/articles/shareholder/:id', function(req,res,next){
+  var id=req.params.id;
+  if (id < 0) res.redirect(0);
+  if(id >= su_archive.length) res.redirect(su_archive.length - 1);
+  res.render('articles-shareholder', {title: 'Archive - Protext', articles: su_archive, preview:true, id:id})
 });
 
 module.exports = router;
