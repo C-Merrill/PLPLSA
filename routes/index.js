@@ -85,6 +85,10 @@ var prs = [
   {
     title:'September 13, 2017',
     article:'Protext.PR.9.13.17.2.pdf'
+  },
+  {
+    title:'September 20, 2017',
+    article:'Protext.PR.9.20.17.1.3.pdf'
   }
 ];
 
@@ -92,6 +96,10 @@ var su_archive = [
   {
     title:'Shareholder Update Dec. 31, 2016',
     article:'Update_SH_12-31-16.pdf'
+  },
+  {
+    title:'Shareholder Update October 29, 2016',
+    article:'CEO.Update.1.03.pdf'
   }
 ]
 
