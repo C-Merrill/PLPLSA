@@ -54,6 +54,14 @@ var articles = [
   {
     title:'Medical Innovation Bill (Cannabis guidelines) - NEHAWU briefing',
     article:'Medical_Innovation_Bill_Cannabis_guidelines.pdf'
+  },
+  {
+    title:'SA Medicine Control Council: Gazette published 11/17/17 - Cannabidiol as Schedule 4 substance when intended for therapeutic purposes',
+    article:'Medicines.Gazette.1.1.pdf'
+  },
+  {
+    title: 'Cannabis Guidelines: Medicines Control Council briefing',
+    article:'Committee report (1) (1) (1).pdf'
   }
 ];
 
@@ -98,7 +106,7 @@ var su_archive = [
     article:'Update_SH_12-31-16.pdf'
   },
   {
-    title:'Shareholder Update October 29, 2016',
+    title:'Shareholder Update October 29, 2017',
     article:'CEO.Update.1.03.pdf'
   }
 ]
