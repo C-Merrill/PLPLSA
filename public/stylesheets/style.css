@@ -169,7 +169,7 @@ p{
 .gallery-item{
   max-height:200px;
   padding:15px 15px;
-  
+
 }
 
 .gallery-item img{
@@ -189,4 +189,20 @@ p{
 h4 {
   margin-top: 20px;
   font-style: italic;
+}
+
+h6 {
+  font-size: 16px;
+  font-style: italic;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.blurred-img {
+  background-image: url(/images/cannabis/cannabis_rx.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  -moz-box-shadow: inset 0 0 17px 10px #E9FFE6;
+  -webkit-box-shadow: inset 0 0 17px 10px #E9FFE6;
+  box-shadow: inset 0 0 17px 10px #E9FFE6;
 }

@@ -65,41 +65,6 @@ var articles = [
   }
 ];
 
-var prs = [
-  {
-    title:'January 10, 2017',
-    article:'Protext.PR.1.10.17.9.pdf'
-  },
-  {
-    title:'March 2, 2017',
-    article:'PR.3.2.17.1.1.pdf'
-  },
-  {
-    title:'March 7, 2017',
-    article:'Protext.PR.3.7.17.1.5.pdf'
-  },
-  {
-    title:'March 27, 2017 Cannabis',
-    article:'PR.CannabisBio.3.27.17.pdf'
-  },
-  {
-    title:'May 4, 2017',
-    article:'PR.TXTM.May.4.2017.1.f.pdf'
-  },
-  {
-    title:'May 23, 2017 Cannabis',
-    article:'Protext.PR.5.23.17.1.1.pdf'
-  },
-  {
-    title:'September 13, 2017',
-    article:'Protext.PR.9.13.17.2.pdf'
-  },
-  {
-    title:'September 20, 2017',
-    article:'Protext.PR.9.20.17.1.3.pdf'
-  }
-];
-
 var su_archive = [
   {
     title:'Shareholder Update Dec. 31, 2016',
@@ -260,26 +225,16 @@ router.get('/articles', function(req, res, next){
   res.render('articles', {title: 'Articles - Protext', articles: articles, preview:false });
 });
 
-router.get('/articles/pr', (req,res,next) => {
-  res.render('articles-press', {title: 'Press - Protext', articles: prs, preview:false });
-});
-
 router.get('/articles/shareholder', (req,res,next) => {
   res.render('articles-shareholder', {title: 'Archive - Protext', articles: su_archive, preview:false });
 });
 
 router.get('/articles/:id', function(req,res,next){
   var id = req.params.id;
+  if (isNaN(id)) res.redirect(0);
   if (id < 0) res.redirect(0);
   if (id >= articles.length) res.redirect(articles.length - 1);
   res.render('articles', {title: 'Articles - Protext', articles: articles, preview:true, id:id});
-});
-
-router.get('/articles/pr/:id', function(req,res,next){
-  var id=req.params.id;
-  if (id < 0) res.redirect(0);
-  if(id >= prs.length) res.redirect(prs.length - 1);
-  res.render('articles-press', {title: 'Press - Protext', articles: prs, preview:true, id:id})
 });
 
 router.get('/articles/shareholder/:id', function(req,res,next){
