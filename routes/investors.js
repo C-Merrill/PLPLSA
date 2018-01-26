@@ -1,10 +1,13 @@
 var express = require('express');
 var router = express.Router();
 
-var recentPR = 'Protext.PR.9.20.17.1.3.pdf';
 var recentSU = 'CEO.Update.1.03.pdf';
 
 var prs = [
+  {
+    title: 'January 19, 2018',
+    article:'Protext.PR.1.19.18.2.6.pdf'
+  },
   {
     title:'November 20, 2017',
     article:'Protext.PR.11.20.17.1.1.1.pdf'
