@@ -62,7 +62,11 @@ var articles = [
   {
     title: 'Cannabis Guidelines: Medicines Control Council briefing',
     article:'Committee report (1) (1) (1).pdf'
-  }
+  },
+  {
+    title: '7/4/18 Cannabis Facility Inspection',
+    article:'MCC visit 4 july 18.pdf'
+  },
 ];
 
 var su_archive = [
