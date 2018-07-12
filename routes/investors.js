@@ -52,6 +52,10 @@ var prs = [
     title:'January 10, 2017',
     article:'Protext.PR.1.10.17.9.pdf'
   },
+  {
+    title:'July 11, 2018',
+    article:'PR.7.11.18.1F.3.pdf'
+  }
 ];
 
 /* GET investors main page */
